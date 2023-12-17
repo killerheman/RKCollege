@@ -3,13 +3,13 @@
     <meta charset="utf-8" />
     <title>Admin | @yield('title')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="RK college CMC" name="description" />
+    <meta content="RK college" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <script type="text/javascript"
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-    <link rel="shortcut icon" href="{{ asset('frontend/assets/images/cmlogo.png') }}">
+    <link rel="shortcut icon" href="{{ asset('frontend/assets/images/icon/lnmulogo.png') }}">
 
     <!-- jsvectormap css -->
     <link href="{{ asset('backend/assets/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet" type="text/css" />
@@ -29,4 +29,5 @@
     <link href="{{ asset('backend/assets/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/css/toastr.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 </head>

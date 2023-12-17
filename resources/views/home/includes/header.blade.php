@@ -1,25 +1,5 @@
 <header class="header" style="background-image: url('{{ asset('frontend/assets/images/icon/bg_img2.jpg')}}');background-size: fill;">
-    <div class="top-bar">
-        <div class="container">
-            <div class="contact pull-left">
-                <p class="phone" style="font-size: 13px"><i class="fa fa-phone" style="color: white;"></i><a
-                        href="tel:+9106276222264" style="color: white;">Call us 06276-222264</a></p>
-                {{-- <p class="email" style="font-size: 13px"><i class="fa fa-envelope" style="color: white;"></i><a
-                        href="mailto:principalcmcollege@yahoo.com" style="color: white;">principalcmcollege@yahoo.com</a></p> --}}
-            </div>
-            <!--//social-icons-->
-            <div class="form-group">
-                <p class="navbar-right"
-                    style="color: #BFD3E3; vertical-align: middle; font-size: 8pt; margin-top: 15px; font-weight: 600; margin-right: 10px">
-                    <a
-                        href="https://casrkc.in/" style="color: white;">College Automation System </a>
-                        |
-                        <a
-                        href="https://lnmu.ac.in/" style="color: white;"> LNMU Website</a>
-                </p>
-            </div>
-        </div>
-    </div>
+
     <!--//to-bar-->
     <div class="header-main container">
         <div class="info col-md-2 col-sm-2 " style="margin-top: 10px;">
@@ -30,7 +10,7 @@
                 </a>
             </div>
         </div>
-        <div class="info col-md-9 col-sm-8 text-center">
+        <div class="info col-md-8 col-sm-8 text-center">
 
 
             <div class="text-effect">
@@ -49,14 +29,14 @@
             <h5 class="" style="font-weight: bold; text-align: center;"> ( Accredited with 'B++' Grade by NAAC )</h5>
         </div>
         <!--//logo-->
-        {{-- <div class="info col-md-2 col-sm-2">
+        <div class="info col-md-2 col-sm-2">
             <div class="pull-right"><br />
                 <a href="#">
-                    <img src="{{ asset('frontend/assets/images/icon/lnmulogo.png') }}" alt="College Logo"
+                    <img src="{{ asset('frontend/assets/images/icon/naac_grade_lnmu.png') }}" alt="NAAC Grade"
                         class="img-responsive" width="100" />
                 </a>
             </div>
-        </div> --}}
+        </div>
         <!--//info-->
     </div>
     <!--//header-main-->

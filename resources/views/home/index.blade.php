@@ -86,27 +86,31 @@
             </div>
         </div>
         <div class="col-md-4">
-            <!--//links-->
-                <section class="links">
-                <h1 class="section-heading text-highlight"><span class="line"
-                        style="color: #fa8303;font-weight: 700;">Important Links</span></h1>
-                <div class="section-content">
-                    <p><a href="https://ugceresources.in/"><i class="fa fa-caret-right"></i>UGC e-Resources</a>
-                    </p>
-                    {{-- <p><a href="ddukk.html"><i class="fa fa-caret-right"></i>Deen Dayal Upadhyay Kaushal Kendra
-                            (DDUKK)</a></p> --}}
-                    <p><a href="#"><i class="fa fa-caret-right"></i>Commercepedia</a></p>
-                    <p><a href="#"><i class="fa fa-caret-right"></i>Commercepedia
-                            (Student Edition)</a></p>
-                    <p><a href="#"><i class="fa fa-caret-right"></i>Online
-                            Study Material</a></p>
-                    <p><a href="{{ route('news') }}"><i class="fa fa-caret-right"></i>Press News</a></p>
-
+            <div class="serviceBox1">
+                <div class="service-icon">
+                    <h3 class="title">Important Links</h3>
                 </div>
-                <!--//section-content-->
-            </section>
-
-            <!--//links-->
+                <ul>
+                    <a href="https://lnmu.ac.in/">
+                        <li style="text-align: left; margin-bottom:8px;">LNMU Website</li>
+                    </a>
+                    <a href="https://lnmu.ac.in/">
+                        <li style="text-align: left; margin-bottom:8px;">College Automation System</li>
+                    </a>
+                    <a href="https://lnmu.ac.in/">
+                        <li style="text-align: left; margin-bottom:8px;">Press Notes</li>
+                    </a>
+                    <a href="https://lnmu.ac.in/">
+                        <li style="text-align: left; margin-bottom:8px;">Admission Notifications</li>
+                    </a>
+                    <a href="https://lnmu.ac.in/">
+                        <li style="text-align: left;">E-Library</li>
+                    </a>
+                    <a href="https://lnmu.ac.in/">
+                        <li style="text-align: left;">Discipline</li>
+                    </a>
+                </ul>
+            </div>
         </div>
         <!--//col-md-3-->
     </div>

@@ -14,132 +14,271 @@
         <div class="navbar-collapse collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="nav-item"><a href="{{ route('home') }}" accesskey="1">Home</a></li>
+
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
-                        data-close-others="false" href="#" accesskey="2">About Us<i
+                        data-close-others="false" href="#" accesskey="2">About<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('aboutCollege') }}">About the College</a></li>
-                        <li><a href="{{ route('visionMission') }}">Vision and Mission</a></li>
-                        <li><a href="{{ route('viceChancellorDesk') }}">From Vice-Chancellor's Desk</a></li>
-                        <li><a href="{{ route('principalDesk') }}">From Principal's Desk</a></li>
-                        <li><a href="{{ route('collegeAchievements') }}">Achievements</a></li>
-                        <li><a href="{{ route('administrationCommittees') }}">Administration & Committtes</a></li>
-                        <li><a href="{{ route('organogram') }}">Organogram</a></li>
-                        <li><a href="{{ route('annualReport') }}">Annual Report</a></li>
-                        <li><a href="#">Code of conduct</a></li>
+                        <li><a href="#">ISO Certified</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Mission & Vision</a></li>
+                        <li><a href="#">Kulgeet</a></li>
+                        <li><a href="#">MOU</a></li>
+                        <li><a href="#">Progress according to NAAC</a></li>
+                        <li><a href="#">Institution Best Practice</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="trigger" tabindex="-1" href="Academics-CoursesUG.html">Infrastructures<i
+                                    class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Labs</a>
+                                </li>
+                                <li><a href="#">Late P.N. Singh Memorial Auditorium</a></li>
+                                <li><a href="#">Conference/Seminar Hall</a></li>
+                                <li><a href="#">Indoor Stadium</a></li>
+                                <li><a href="#">Media Center</a></li>
+                                <li><a href="#">Smart Classes & Class Rooms</a></li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
+                        data-close-others="false" href="#" accesskey="4">Administration<i
+                            class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Faculty Incharge</a></li>
+                        <li><a href="#">Administrative Structure</a></li>
+                        <li><a href="#">Administrative Section</a></li>
+                        <li><a href="#">Account Section</a></li>
+                        <li><a href="#">Laboratory</a></li>
+                        <li><a href="#">Library Section</a></li>
+
+                    </ul>
+                </li>
+
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
                         data-close-others="false" href="#" accesskey="3">Academics<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Academic Activities</a></li>
+                        <li><a href="#">Academic Curriculum</a></li>
+                        <li><a href="#">Capability & Efficiency Enhancement Programs</a></li>
+                        <li><a href="#">PO,PSO & CO</a></li>
+                        <li><a href="#">Other Programs</a></li>
+                        <li><a href="#">Orientation & Bridge Classes</a></li>
+                        <li><a href="#">Social Awareness & Moral Builidng</a></li>
+                        <li><a href="#">UGC Sponsored Add-on Courses</a></li>
+                        <li><a href="#">Annual Report</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
+                        data-close-others="false" href="#" accesskey="4">Courses<i
+                            class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('informationBulletinAdmission') }}">Vedic Mathematics</a>
+                        </li>
+                        <li><a href="{{ route('admissionSchedule') }}">Entrepreneurship & Skill Development Program</a></li>
+                        <li><a href="{{ route('eligibilityCriteria') }}">Yoga Philosophy</a></li>
+                        <li><a href="{{ route('admissionProcedure') }}">Indology</a></li>
+                        <li><a href="{{ route('seatsOffered') }}">Gender & Society</a></li>
+                        <li><a href="http://lnmu.ac.in/">Film & Culture</a></li>
+                        <li><a href="http://lnmu.ac.in/">Human Right</a></li>
+                        <li><a href="http://lnmu.ac.in/">Entrepreneurship</a></li>
+                        <li><a href="http://lnmu.ac.in/">Record & Document Management</a></li>
+                        <li><a href="http://lnmu.ac.in/">Emotional Intelligence</a></li>
+                        <li><a href="http://lnmu.ac.in/">Mass Media</a></li>
+
+                    </ul>
+                </li>
+                <!--//dropdown-->
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
+                        data-close-others="false" href="#" accesskey="6">Activities<i
+                            class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sports Activities</a></li>
+                        <li><a href="#">NSS</a></li>
                         <li class="dropdown-submenu">
-                            <a class="trigger" tabindex="-1" href="Academics-CoursesUG.html">Courses<i
+                            <a class="trigger" tabindex="-1" href="#">Departmental Activities<i
                                     class="fa fa-angle-right"></i></a>
+                            {{-- <ul class="dropdown-menu">
+
+                            </ul> --}}
                             <ul class="dropdown-menu">
-                                <li><a tabindex="-1" href="{{ route('underGraduateCourses') }}">U. G. Courses</a>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">Commerce<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
                                 </li>
-                                <li><a href="{{ route('diplomaCourses') }}">Self-finance U.G. Courses</a></li>
-                                <li><a href="{{ route('postGraduateCourses') }}">P.G. Courses</a></li>
-                                <li><a href="{{ route('certificateCourses') }}">Certificate Courses</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">Economics<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">Hindi<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">English<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">Sanskrit<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">Philosophy<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">AIHC<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">Urdu<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">History<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">Psychology<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">Political Science<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">Socialogy<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Academic Activity</a></li>
+                                        <li><a href="#">Student Forum</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="{{ route('examination') }}">Examination and Assesments</a></li>
-                        <li><a href="{{ route('facultyArts') }}">Departments & Faculties</a></li>
-                        <li><a href="{{ route('collegeResearch') }}">Research</a></li>
-                        <li><a href="https://lnmu.ac.in/academic-calendar">Academic Calendar</a></li>
-                        <li><a href="{{ route('distanceLearningCenter') }}">Distance Learning Centre</a></li>
+
+                        <li><a href="#">Cultural Activities</a></li>
+                        <li><a href="#">NCC</a></li>
 
                     </ul>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
-                        data-close-others="false" href="#" accesskey="4">Admission<i
+                        data-close-others="false" href="#" accesskey="2">Faculty<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('informationBulletinAdmission') }}">Information Bulletin Admission</a>
-                        </li>
-                        <li><a href="{{ route('admissionSchedule') }}">Admission Schedule</a></li>
-                        <li><a href="{{ route('eligibilityCriteria') }}">Eligibility Criteria</a></li>
-                        <li><a href="{{ route('admissionProcedure') }}">Admission Procedure</a></li>
-                        <li><a href="{{ route('seatsOffered') }}">Seats Offered</a></li>
-                        <li><a href="http://lnmu.ac.in/">Apply Online</a></li>
-
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
-                        data-close-others="false" href="{{ route('collegeLibrary') }}">Library<i
-                            class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ route('collegeLibrary') }}">About the Library</a></li>
-                        <li><a href="{{ route('libraryRules') }}">Rules</a></li>
-
-
-
-                        <li><a href="http://lnmu.ac.in/" target="_blank">N-List</a></li>
-                    </ul>
-                </li>
-                <!--//dropdown-->
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
-                        data-close-others="false" href="#" accesskey="6">Facilities<i
-                            class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ route('collegeCanteen') }}">College Canteen</a></li>
-                        <li><a href="{{ route('sportsGames') }}">Sports and Games</a></li>
-                        <li><a href="{{ route('magazinePublications') }}">Magazines & Publications</a></li>
-                        <li><a href="{{ route('hostelFacilities') }}">Hostel Facilities</a></li>
-                        <li><a href="{{ route('nccNssScoutsGuides') }}">NCC, NSS and Scouts & Guides</a></li>
-                        <li><a href="{{ route('medicalFacilites') }}">Medical Facilities</a></li>
-                        <li><a href="{{ route('collegeInfrastructure') }}">Infrastructure</a></li>
-                        <li></li>
-                    </ul>
-                </li>
-                <!--//dropdown-->
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
-                        data-close-others="false" href="#">Student Corner<i
-                            class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="http://lnmu.ac.in/">Result</a></li>
-                        <li><a href="{{ route('examinationDatesheet') }}">Semester-End Examination Datesheet</a></li>
-                        <li><a href="http://lnmu.ac.in/">Examination Form</a></li>
-                        {{-- <li class="dropdown-submenu">
-                            <a class="trigger" tabindex="-1" href="#" data-close-others="false">Downloads<i
+                        <li><a href="{{ route('iqac') }}">Faculty of Commerce</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="trigger" tabindex="-1" href="#">Faculty of Arts<i
                                     class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a tabindex="-1" href="{{ route('downloadSyllabus') }}">Syllabus</a></li>
-                                <li><a tabindex="-1" href="{{ route('downloadOnlineStudyMaterial') }}">Online Study
-                                        Material</a></li>
+                                <li><a href="#">Department of A.I.H.C. & Arch.</a></li>
+                                <li><a href="#">Department of English</a></li>
+                                <li><a href="#">Department of Hindi</a></li>
+                                <li><a href="#">Department of Philosophy</a></li>
+                                <li><a href="#">Department of Sanskrit</a></li>
+                                <li><a href="#">Department of Urdu</a></li>
                             </ul>
-                        </li> --}}
-                        <li><a href="{{ route('collegePlacement') }}">Placements</a></li>
-                        <li><a href="{{ route('regulation') }}">Regulation</a></li>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="trigger" tabindex="-1" href="#">Faculty of Social Science<i
+                                    class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Department of Economics</a></li>
+                                <li><a href="#">Department of History</a></li>
+                                <li><a href="#">Department of Poltical Science</a></li>
+                                <li><a href="#">Department of Psychology</a></li>
+                                <li><a href="#">Department of Socialogy</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ route('aqar') }}">Faculty of Physical Education</a></li>
                     </ul>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
-                        data-close-others="false" href="#" accesskey="2">NAAC<i
+                        data-close-others="false" href="#" accesskey="2">IQAC<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('iqac') }}">IQAC</a></li>
-                        <li><a href="{{ route('aqar') }}">AQAR</a></li>
-                        <li><a href="{{ route('iqacComposition') }}">Comparison</a></li>
-                        <li><a href="{{ route('minutesOfMeeting') }}">Minutes of meeting</a></li>
-                        <li><a href="{{ route('ssr') }}">SSR</a></li>
-                        {{-- <li><a href="{{ route('aisheReport') }}">AISHE Report</a></li> --}}
-                        <li><a href="{{ route('naacGrade') }}">NAAC Grade</a></li>
-                        <li><a href="{{ route('sss') }}">Student's Satisfaction Survey</a></li>
-                        {{-- <li><a href="{{ route('nirf') }}">NIRF</a></li> --}}
+                        <li><a href="{{ route('iqac') }}">About IQAC</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="trigger" tabindex="-1" href="#">SSR<i
+                                    class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">SSR Report</a></li>
+                                <li><a href="#">SSR Related Links</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="trigger" tabindex="-1" href="#">AQAR<i
+                                    class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">AQAR Report</a></li>
+                                <li><a href="#">Links related to AQAR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ route('aqar') }}">Green Audit Report 2017-21</a></li>
+                        <li><a href="{{ route('iqacComposition') }}">Academic Audit Report</a></li>
+                        <li><a href="{{ route('minutesOfMeeting') }}">IQAC Meeting Minutes</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a href="{{ route('nirf') }}" >NIRF</a></li>
-                <li class="nav-item"><a href="{{ route('aisheReport') }}" >AISHE Report</a></li>
-                {{-- <li class="nav-item"><a href="{{ route('pressRelease') }}" >Press Release</a></li> --}}
+                <li class="nav-item"><a href="#" >Alumni</a></li>
             </ul>
             <!--//nav-->
         </div>
