@@ -70,11 +70,6 @@
                                       <p> <a href="{{ asset('biomatric/STUDENTS-ATTENDENCE-2018-20-02.09.19-TO-07.09.19.pdf')}}" class="button" download title="Download"><i class="fa fa-dot-circle-o"></i>STUDENTS ATTENDANCE REPORT 2018-20</a></p> 
                                       <p> <a href="{{ asset('biomatric/STUDENTS-ATTENDENCE-2019-21-02.09.19-TO-07.09.19.pdf')}}" class="button" download title="Download"><i class="fa fa-dot-circle-o"></i>STUDENTS ATTENDANCE REPORT 2019-21</a></p> 
                                       
-                                      <p><a href=""> </a></p>
-                                        <p><a href=""></a></p>
-                                        <p><a href=""> </a></p>
-                                        <p><a href=""> </a></p>
-                                        <p><a href=""></a></p>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section4">
                                         <h3>Routine of B.Ed.</h3>
