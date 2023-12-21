@@ -338,4 +338,30 @@ class HomeController extends Controller
         return view('home.iqac.criteria',compact('criteria1', 'criteria2','criteria3','criteria4','criteria5', 'criteria6','criteria7'));
     }
 
+
+    public function showBed(){
+        return view('home.bed.about_bed');
+    }
+    public function academic(){
+        return view('home.bed.academic');
+    }
+    public function faculty(){
+        return view('home.bed.faculty');
+    }
+    public function gallery(){
+        return view('home.bed.gallery');
+    }
+    public function infrastructure(){
+        return view('home.bed.infrastructure');
+    }
+    public function map(){
+        return view('home.bed.map');
+    }
+    public function accreditation(){
+        return view('home.naac.accreditation');
+    }
+    public function AnnualPlan(){
+        return view('home.naac.annualplan');
+    }
+
 }

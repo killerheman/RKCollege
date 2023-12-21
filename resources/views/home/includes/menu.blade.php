@@ -277,6 +277,59 @@
                         <li><a href="{{ route('minutesOfMeeting') }}">IQAC Meeting Minutes</a></li>
                     </ul>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
+                    data-close-others="false" href="#" accesskey="2">NAAC<i
+                        class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('accreditation') }}">Accreditation</a></li>
+                        <li><a href="{{ route('annualsystem') }}">Annual Gender Sensitization Action Plan</a></li>
+                        <li><a href="">IQAC Meeting Minutes</a></li>
+                        <li><a href="">AQAR</a></li>
+                        <li><a href="">IIQA</a></li>
+                        <li><a href="#">SSR 2013 Report</a></li>
+                        <li><a href="">Sanctioned Post of Faculty</a></li>
+                        <li><a href="">Class Room Facility</a></li>
+                        <li><a href="">Computer Details</a></li>
+                        <li><a href="">CBSC Program</a></li>
+                        <li><a href="">ICT Facility</a></li>
+                        <li><a href="#">Intership/Training</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
+                        data-close-others="false" href="#" accesskey="2">B.Ed<i
+                            class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('showbed') }}">About B.Ed</a></li>
+                        <li><a href="{{ route('faculty') }}">Faculty of B.ed</a></li>
+                        <li><a href="{{ route('infrastructure') }}">Infrastructure & facility</a></li>
+                        <li><a href="{{ route('map') }}">Map of The College</a></li>
+                        <li><a href="{{ route('academic') }}">academic calendar</a></li>
+                        <li><a href="{{ route('eventGallery') }}">B.ed Gallery</a></li>
+                        <!-- <li class="dropdown-submenu">
+                            <a class="trigger" tabindex="-1" href="#">SSR<i
+                                    class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">SSR Report</a></li>
+                                <li><a href="#">SSR Related Links</a></li>
+                            </ul>
+                        </li> -->
+                         <!-- <li class="dropdown-submenu">
+                            <a class="trigger" tabindex="-1" href="#">AQAR<i
+                                    class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">B.Ed Report</a></li>
+                                <li><a href="#">Links related to B.Ed</a></li>
+                            </ul>
+                        </li>  -->
+                        <!-- <li><a href="#">Green Audit Report 2017-21</a></li>
+                        <li><a href="#">Academic Audit Report</a></li>
+                        <li><a href="#"> Meeting Minutes</a></li> -->
+                    </ul>
+                </li>
+
+
                 <li class="nav-item"><a href="{{ route('nirf') }}" >NIRF</a></li>
                 <li class="nav-item"><a href="#" >Alumni</a></li>
             </ul>

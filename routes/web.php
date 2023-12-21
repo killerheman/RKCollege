@@ -116,6 +116,17 @@ Route::get('/nirf', [HomeController::class, 'nirf'])->name('nirf');
 Route::get('/criteria', [HomeController::class, 'criteria'])->name('criteria');
 
 
+//bed route
+Route::get('bed',[HomeController::class,'showBed'])->name('showbed');
+Route::get('academic-calendar',[HomeController::class,'academic'])->name('academic');
+Route::get('faculty-of-bed',[HomeController::class,'faculty'])->name('faculty');
+Route::get('gallery-bed',[HomeController::class,'gallery'])->name('gallery');
+Route::get('infrastructure-bed',[HomeController::class,'infrastructure'])->name('infrastructure');
+Route::get('map-college',[HomeController::class,'map'])->name('map');
+Route::get('annual-system',[HomeController::class,'AnnualPlan'])->name('annualsystem');
+Route::get('accreditation-clg',[HomeController::class,'accreditation'])->name('accreditation');
+
+
 
 
 // Backend Routes
