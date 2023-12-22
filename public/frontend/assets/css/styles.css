@@ -2997,3 +2997,37 @@ ul.custom-list-style li {
     }
 }
 
+
+.gallery {
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto;
+    clear: both;
+    padding: 0;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  
+  .gallery img { /* thumbnails */
+    width: 100px;
+    height: 75px;
+  }
+  
+  .block {
+    display: inline-block;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  pre {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 8px;
+    clear: both;
+  }
+  
+  .highlight {
+    color: red;
+  }

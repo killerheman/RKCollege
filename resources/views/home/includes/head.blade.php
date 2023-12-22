@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="{{ asset('frontend/assets/plugins/flexslider/flexslider.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/plugins/pretty-photo/css/prettyPhoto.css') }}">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" />
+
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="{{ asset('frontend/assets/css/styles.css') }}">
     <script src="{{ asset('frontend/libs/html5shiv/3.7.0/html5shiv.js') }}"></script>
