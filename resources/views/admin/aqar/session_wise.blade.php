@@ -7,7 +7,7 @@
             <div class="card">
 
                 <div class="card-header align-items-center d-flex">
-                    <h4 class="card-title mb-0 flex-grow-1">{{isset($Session_data)?'Update':"Upload";}} AQAR(Session Wise)</h4>
+                    <h4 class="card-title mb-0 flex-grow-1">{{isset($Session_data)?'Update':"Upload"}} AQAR(Session Wise)</h4>
                 </div><!-- end card header -->
                 <div class="card-body">
                     <div class="live-preview">
@@ -36,7 +36,7 @@
                                 <div class="col-xxl-3 col-md-4">
                                     <label for="title" class="form-label">Title</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="title" name="title" value="{{isset($Session_data->title)?$Session_data->title:'';}}" placeholder="Title">
+                                        <input type="text" class="form-control" id="title" name="title" value="{{isset($Session_data->title)?$Session_data->title:''}}" placeholder="Title">
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-md-4">
@@ -48,7 +48,7 @@
                                             <a href="{{ url($Session_data->upload) }}" target="_blank" class="btn btn-warning">View</a>
                                         @endif
                                         @endisset
-                                        <input type="hidden" name="oldfile" value="{{isset($Session_data->upload)?$Session_data->upload:'';}}">
+                                        <input type="hidden" name="oldfile" value="{{isset($Session_data->upload)?$Session_data->upload:''}}">
                                     </div>
 
                                 </div>
@@ -56,7 +56,7 @@
                             </div>
                             <div class="row gy-12 mt-3">
                                 <div class="col-xxl-3 col-md-4">
-                                    <button class="btn btn-primary" type="submit">{{isset($Session_data)?'Update':"Submit";}}</button>
+                                    <button class="btn btn-primary" type="submit">{{isset($Session_data)?'Update':"Submit"}}</button>
                                 </div>
                             </div>
                         </form>

@@ -26,47 +26,6 @@ class HomeController extends Controller
         return view('home.index', compact('notices', 'events','topnotices','tenders', 'banners'));
     }
 
-    //About Section
-    public function aboutCollege()
-    {
-        return view('home.about_college');
-    }
-
-    public function visionMission()
-    {
-        return view('home.vision_mission');
-    }
-
-    public function viceChancellorDesk()
-    {
-        return view('home.vice_chancellor_desk');
-    }
-
-    public function principalDesk()
-    {
-        return view('home.principal_desk');
-    }
-
-    public function collegeAchievements()
-    {
-        return view('home.college_achievments');
-    }
-
-    public function administrationCommittees()
-    {
-        return view('home.administration_committees');
-    }
-
-    public function organogram()
-    {
-        return view('home.organogram');
-    }
-
-    public function annualReport()
-    {
-        return view('home.annual_report');
-    }
-
     //Academics Section
     public function underGraduateCourses()
     {
@@ -364,4 +323,130 @@ class HomeController extends Controller
         return view('home.naac.annualplan');
     }
 
+    //About Section
+    public function about()
+    {
+        return view('home.about.about_college');
+    }
+    public function isoCertified()
+    {
+        return view('home.about.isoCertified');
+    }
+    public function history()
+    {
+        return view('home.about.history');
+    }
+    public function missionVission()
+    {
+        return view('home.about.vision_mission');
+    }
+    public function kulgeet()
+    {
+        return view('home.about.kulgeet');
+    }
+    public function mou()
+    {
+        return view('home.about.mou');
+    }
+    public function naac()
+    {
+        return view('home.about.naac.naac');
+    }
+    public function practice()
+    {
+        return view('home.about.instituationPractice');
+    }
+    public function lab()
+    {
+        return view('home.about.infrastructure.lab');
+    }
+    public function auditoirum()
+    {
+        return view('home.about.infrastructure.auditorium');
+    }
+    public function conferenceHall()
+    {
+        return view('home.about.infrastructure.conference_hall');
+    }
+    public function indoorStadium()
+    {
+        return view('home.about.infrastructure.indoor_stdium');
+    }
+    public function mediaCenter()
+    {
+        return view('home.about.infrastructure.mediaCenter');
+    }
+    public function smartClasses()
+    {
+        return view('home.about.infrastructure.classes');
+    }
+
+    //Administrator
+
+    public function facilityIncharge()
+    {
+        return view('home.administrator.facility_incharge');
+    }
+    public function administrativeStructure()
+    {
+        return view('home.administrator.admiinstrativeStructure');
+    }
+    public function administrativeSection()
+    {
+        return view('home.administrator.administrativeSection');
+    }
+    public function accountSection()
+    {
+        return view('home.administrator.accountSection');
+    }
+    public function laboratory()
+    {
+        return view('home.administrator.labaoratory');
+    }
+    public function library()
+    {
+        return view('home.administrator.library');
+    }
+
+    //Academics
+    public function admission()
+    {
+        return view('home.academics.admission');
+    }
+    public function activity()
+    {
+        return view('home.academics.activities');
+    }
+    public function curriculum()
+    {
+        return view('home.academics.curriculum');
+    }
+    public function enhancementProgram()
+    {
+        return view('home.academics.enhancementProgram');
+    }
+    public function pso()
+    {
+        return view('home.academics.pso');
+    }
+    public function otherProgram()
+    {
+        return view('home.academics.otherProgram');
+    }
+    public function orientationClass()
+    {
+        return view('home.academics.orientationClass');
+    }
+    public function socialAwareness()
+    {
+        return view('home.academics.socialAwerness');
+    }
+    public function addOnCourse()
+    {
+        return view('home.academics.add_on_course');
+    }
+    public function annualReport()
+    {
+        return view('home.academics.annualReport');
+    }
 }
