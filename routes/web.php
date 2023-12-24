@@ -35,7 +35,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 //About Menu
 Route::get('/about-us', [HomeController::class, 'about'])->name('about');
 Route::get('/iso-certified', [HomeController::class, 'isoCertified'])->name('isoCertified');
-Route::get('/history', [HomeController::class, 'history'])->name('history');
+Route::get('/college-history', [HomeController::class, 'CollegeHistory'])->name('CollegeHistory');
 Route::get('/mission-vision', [HomeController::class, 'missionVission'])->name('missionVission');
 Route::get('/kulgeet', [HomeController::class, 'kulgeet'])->name('kulgeet');
 Route::get('/mou', [HomeController::class, 'mou'])->name('mou');
@@ -71,6 +71,64 @@ Route::get('/orientation-class', [HomeController::class, 'orientationClass'])->n
 Route::get('/social-awareness', [HomeController::class, 'socialAwareness'])->name('socialAwareness');
 Route::get('/add-on-course', [HomeController::class, 'addOnCourse'])->name('addOnCourse');
 Route::get('/annual-report', [HomeController::class, 'annualReport'])->name('annualReport');
+
+//Courses
+Route::get('/vedic-mathematics', [HomeController::class, 'vedicMathematics'])->name('vedicMathematics');
+Route::get('/skill-development-program', [HomeController::class, 'skillDevelopmentProgram'])->name('skillDevelopmentProgram');
+Route::get('/yoga-philosophy', [HomeController::class, 'yogaPhilosophy'])->name('yogaPhilosophy');
+Route::get('/indology', [HomeController::class, 'indology'])->name('indology');
+Route::get('/gender-society', [HomeController::class, 'genderSociety'])->name('genderSociety');
+Route::get('/film-culture', [HomeController::class, 'filmCulture'])->name('filmCulture');
+Route::get('/human-right', [HomeController::class, 'humanRight'])->name('humanRight');
+Route::get('/entrepreneurship', [HomeController::class, 'entrepreneurship'])->name('entrepreneurship');
+Route::get('/record-document', [HomeController::class, 'recordDocument'])->name('recordDocument');
+Route::get('/emotional-intelligence', [HomeController::class, 'emotionalIntelligence'])->name('emotionalIntelligence');
+Route::get('/mass-media', [HomeController::class, 'massMedia'])->name('massMedia');
+
+//Activities
+
+Route::get('/sports-activity', [HomeController::class, 'sportActivity'])->name('sportActivity');
+Route::get('/nss', [HomeController::class, 'nss'])->name('nss');
+Route::get('/culture-activity', [HomeController::class, 'cultureActivities'])->name('cultureActivities');
+Route::get('/ncc', [HomeController::class, 'ncc'])->name('ncc');
+
+Route::get('/commerce/academic-activity', [HomeController::class, 'commerceAcademicActivity'])->name('commerceAcademicActivity');
+Route::get('/commerce/student-forum', [HomeController::class, 'commerceStudentForum'])->name('commerceStudentForum');
+
+Route::get('/economics/academic-activity', [HomeController::class, 'economicsAcademicActivity'])->name('economicsAcademicActivity');
+Route::get('/economics/student-forum', [HomeController::class, 'economicsStudentForum'])->name('economicsStudentForum');
+
+Route::get('/hindi/academic-activity', [HomeController::class, 'hindiAcademicActivity'])->name('hindiAcademicActivity');
+Route::get('/hindi/student-forum', [HomeController::class, 'hindiStudentForum'])->name('hindiStudentForum');
+
+Route::get('/english/academic-activity', [HomeController::class, 'englishAcademicActivity'])->name('englishAcademicActivity');
+Route::get('/english/student-forum', [HomeController::class, 'englishStudentForum'])->name('englishStudentForum');
+
+Route::get('/sanskrit/academic-activity', [HomeController::class, 'sanskritAcademicActivity'])->name('sanskritAcademicActivity');
+Route::get('/sanskrit/student-forum', [HomeController::class, 'sanskritStudentForum'])->name('sanskritStudentForum');
+
+Route::get('/philosophy/academic-activity', [HomeController::class, 'philosophyAcademicActivity'])->name('philosophyAcademicActivity');
+Route::get('/philosophy/student-forum', [HomeController::class, 'philosophyStudentForum'])->name('philosophyStudentForum');
+
+Route::get('/aihc/academic-activity', [HomeController::class, 'aihcAcademicActivity'])->name('aihcAcademicActivity');
+Route::get('/aihc/student-forum', [HomeController::class, 'aihcStudentForum'])->name('aihcStudentForum');
+
+Route::get('/urdu/academic-activity', [HomeController::class, 'urduAcademicActivity'])->name('urduAcademicActivity');
+Route::get('/urdu/student-forum', [HomeController::class, 'urduStudentForum'])->name('urduStudentForum');
+
+Route::get('/history/academic-activity', [HomeController::class, 'historyAcademicActivity'])->name('historyAcademicActivity');
+Route::get('/history/student-forum', [HomeController::class, 'historyStudentForum'])->name('historyStudentForum');
+
+Route::get('/psychology/academic-activity', [HomeController::class, 'psychologyAcademicActivity'])->name('psychologyAcademicActivity');
+Route::get('/psychology/student-forum', [HomeController::class, 'psychologyStudentForum'])->name('psychologyStudentForum');
+
+Route::get('/political-science/academic-activity', [HomeController::class, 'politicalScienceAcademicActivity'])->name('politicalScienceAcademicActivity');
+Route::get('/political-science/student-forum', [HomeController::class, 'politicalScienceStudentForum'])->name('politicalScienceStudentForum');
+
+Route::get('/socialogy/academic-activity', [HomeController::class, 'socialogyAcademicActivity'])->name('socialogyAcademicActivity');
+Route::get('/socialogy/student-forum', [HomeController::class, 'socialogyStudentForum'])->name('socialogyStudentForum');
+
+
 
 //Academics Menu
 Route::get('/under-graduate-courses', [HomeController::class, 'underGraduateCourses'])->name('underGraduateCourses');
