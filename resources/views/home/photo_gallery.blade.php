@@ -18,10 +18,10 @@
                 <div class="row">
                     @if ($events)
                         @foreach ($events as $event)
-                            <div class="col-md-4 col-sm-6">
+                            <div class="col-md-4 col-sm-6 mb-2">
                                 <div class="box">
                                     <a href="{{ route('photoGalleryImage', Crypt::encrypt($event->id)) }}">
-                                    <img src="{{ asset($event->thumbnail) }}">
+                                    <img src="{{ asset($event->thumbnail??'backend/college-website/events.jpg') }}">
                                     <div class="box-content">
                                         <h3 class="title">{{ $event->name }}</h3>
                                     </div>

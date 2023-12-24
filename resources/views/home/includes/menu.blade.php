@@ -30,14 +30,14 @@
                         <li class="dropdown-submenu">
                             <a class="trigger" tabindex="-1" href="Academics-CoursesUG.html">Infrastructures<i
                                     class="fa fa-angle-right"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu ">
                                 <li><a tabindex="-1" href="#">Labs</a>
                                 </li>
                                 <li><a href="#">Late P.N. Singh Memorial Auditorium</a></li>
                                 <li><a href="#">Conference/Seminar Hall</a></li>
                                 <li><a href="#">Indoor Stadium</a></li>
                                 <li><a href="#">Media Center</a></li>
-                                <li><a href="#">Smart Classes & Class Rooms</a></li>
+                                <li><a href="#">Smart Classes & classs Rooms</a></li>
                             </ul>
                         </li>
 
@@ -48,7 +48,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
                         data-close-others="false" href="#" accesskey="4">Administration<i
                             class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-xl">
                         <li><a href="#">Faculty Incharge</a></li>
                         <li><a href="#">Administrative Structure</a></li>
                         <li><a href="#">Administrative Section</a></li>
@@ -293,7 +293,7 @@
                         <li><a href="#">Computer Details</a></li>
                         <li><a href="#">CBSC Program</a></li>
                         <li><a href="#">ICT Facility</a></li>
-                        <li><a href="#">Intership/Training</a></li>
+                        <li><a href="{{ route('student-corner') }}">Student Corner</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -308,7 +308,7 @@
                         <li><a href="{{ route('academic') }}">academic calendar</a></li>
                         <li><a href="{{ route('gallery') }}">B.ed Gallery</a></li>
                         <!-- <li class="dropdown-submenu">
-                            <a class="trigger" tabindex="-1" href="#">SSR<i
+                            <a class="trigger" tabindex="-1" href="#" > SSR<i
                                     class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">SSR Report</a></li>
@@ -328,8 +328,6 @@
                         <li><a href="#"> Meeting Minutes</a></li> -->
                     </ul>
                 </li>
-
-
                 <li class="nav-item"><a href="{{ route('nirf') }}" >NIRF</a></li>
                 <li class="nav-item"><a href="#" >Alumni</a></li>
             </ul>

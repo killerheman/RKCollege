@@ -364,4 +364,7 @@ class HomeController extends Controller
         return view('home.naac.annualplan');
     }
 
+    public function student_corner(){
+        return view('home.student.student_corner');
+    }
 }
