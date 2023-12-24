@@ -27,12 +27,12 @@
                                     <label for="file" class="form-label">Criteria Data</label>
                                     <div class="input-group">
                                         <input type="file" class="form-control" id="file" name="file">
-                                        @isset($editcriteria->path) 
+                                        @isset($editcriteria->path)
                                         @if(!empty($editcriteria->path))
                                             <a href="{{ url($editcriteria->path) }}" target="_blank" class="btn btn-warning"/>View</a>
                                         @endif
                                         @endisset
-                                        <input type="hidden" name="oldfile" value="{{isset($editcriteria->path)?$editcriteria->path:'';}}">
+                                        <input type="hidden" name="oldfile" value="{{isset($editcriteria->path)?$editcriteria->path:''}}">
                                     </div>
                                 </div>
                                 <!--end col-->
