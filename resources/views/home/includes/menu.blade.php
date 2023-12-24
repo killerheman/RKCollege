@@ -307,6 +307,7 @@
                         <li><a href="{{ route('map') }}">Map of The College</a></li>
                         <li><a href="{{ route('academic') }}">academic calendar</a></li>
                         <li><a href="{{ route('gallery') }}">B.ed Gallery</a></li>
+                        <li><a href="#">Result</a></li>
                         <!-- <li class="dropdown-submenu">
                             <a class="trigger" tabindex="-1" href="#">SSR<i
                                     class="fa fa-angle-right"></i></a>

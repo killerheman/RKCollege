@@ -12,7 +12,7 @@
         </header>
         <div class="page-content">
             <div class="row page-row">
-                <table class="table table-striped" border="1" width="100%">
+                <table class="table table-striped" border="1" width="100%" style="color:maroon;">
                     <tbody>
                     <tr>
                     <th>1.</th>

@@ -5,14 +5,14 @@
 
         <header class="page-heading clearfix">
             <div class="text-effect" data-content="About College">
-                <span>About College</span>
+                <span>B.Ed. College</span>
             </div>
             <!--//breadcrumbs-->
         </header>
         <div class="page-content">
             <div class="row page-row">
                 <div class="container">
-                    <div class="row">
+                    {{-- <div class="row"> --}}
                         <div class="col-md-12">
                             <div class="vertical-tab" role="tabpanel">
                                 <!-- Nav tabs -->
@@ -35,6 +35,7 @@
                                     <li role="presentation"><a href="#Section16" aria-controls="home" role="tab" data-toggle="tab">Faculty List Approved By Affiliating Body</a></li>
                                     <li role="presentation"><a href="#Section17" aria-controls="home" role="tab" data-toggle="tab">Vacancy</a></li>
                                     <li role="presentation"><a href="#Section18" aria-controls="home" role="tab" data-toggle="tab">B.Ed. Contact</a></li>
+                                    <li role="presentation"><a href="#Section19" aria-controls="home" role="tab" data-toggle="tab">Download</a></li>
                                 </ul>
                                 {{-- <a href="{{ asset('recognition/recognition.pdf') }}" class="button" download><i class="fa fa-download"></i>Download Recognition</a> --}}
 
@@ -79,27 +80,69 @@
                                         <a href="{{ asset('routing/002.jpg') }}" class="button" download><i class="fa fa-download"></i>Routine of B.Ed. 2nd</a>
                                     </div>
 
-                                    <div role="tabpanel" class="tab-pane fade" id="Section5">
+                                    <div role="tabpanel" class="tab-pane fade" style="overflow: hidden; height:600px; width:100%;" id="Section5">
                                         <h3>Affiliation of B.Ed.</h3>
-                                        <p>contents to be uploaded soon</p>
-                                        {{-- <img src="{{ asset('managing-commitee/MANAGING-COMMITTEE.jpg') }}" alt="image" style="height: 100%; width:100%;"> --}}
-                                    </div>
+                                        <object data="{{ asset('affiliation/AFFILIATION_LETTER_UNIVERSITY-min.pdf') }}" style="height:100%; width:100%;"></object>
+                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section6">
                                         <h3>Managing Committee</h3>
                                         <img src="{{ asset('managing-commitee/MANAGING-COMMITTEE.jpg') }}" alt="image" style="height: 100%; width:100%;">
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section7">
                                         <h3>Student List</h3>
-                                        <p>contents to be uploaded soon</p>
-                                    </div>
+		
+                                        <div class="container mt-5">
+                                            <div class="accordion" id="accordionExample">
+                                                <!-- Panel 1 -->
+                                                <div class="card">
+                                                    <div class="card-header" id="headingOne">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                <i class="fas fa-plus"></i> Section 1
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                        
+                                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Content for Section 1 goes here.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        
+                                                <!-- Panel 2 -->
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                <i class="fas fa-plus"></i> Section 2
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Content for Section 2 goes here.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        
+                                                <!-- Add more panels as needed -->
+                                        
+                                            </div>
+                                        </div>
+                                           
+                                           
+                                      
+                                        
+                                        </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section8">
                                         <h3>Audit Report Annually</h3>
                                         <p>contents to be uploaded soon</p>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="Section9">
+                                    <div role="tabpanel" class="tab-pane fade" style="overflow: hidden; height:600px; width:100%;" id="Section9">
                                         <h3>Letter for B.Ed. Course(Govt. of Bihar)</h3>
-                                        <p>contents to be uploaded soon</p>
-                                    </div>
+                                        <object data="{{ asset('uploads/uploads/2019/01/Letter-ilovepdf-compressed.pdf') }}" style="height:100%; width:100%;"></object>
+                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section10">
                                         <h3>Hyperlinks</h3>
                                         <p>contents to be uploaded soon</p>
@@ -110,37 +153,64 @@
                                        </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section12">
                                         <h3>FDR</h3>
-                                        <p>contents to be uploaded soon</p>                                   
+                                        <img src="{{ asset('uploads/uploads/2023/04/FDR-2023-2024.jpg') }}" alt="image" style="height: 100%; width:100%;">                                  
                                      </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="Section13">
+                                    <div role="tabpanel" class="tab-pane fade" style="overflow: hidden; height:600px; width:100%;" id="Section13">
                                         <h3>Building Completion Certificate</h3>
-                                        <p>contents to be uploaded soon</p> 
+                                        <object data="{{ asset('uploads/uploads/2019/11/BUILDING-COMPLETION-PDF.pdf') }}" style="height:100%; width:100%;"></object>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="Section14">
+                                    <div role="tabpanel" class="tab-pane fade" style="overflow: hidden; height:600px; width:100%;" id="Section14">
                                         <h3>PAR-2018-19</h3>
-                                        <p>contents to be uploaded soon</p> 
+                                        <object data="{{ asset('uploads/uploads/2019/12/PAYMENT-OF-PAR-FEE.pdf') }}" style="height:100%; width:100%;"></object>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section15">
                                         <h3>Pariksha Pe Charcha</h3>
-                                        <p>contents to be uploaded soon</p> 
+                                        <div class="gallery">
+                                            <a href="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/19b96.jpg') }}"><img src="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/19b96.jpg') }}" alt="Pariksha Pe Charcha"></a>
+                                            <a href="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/29b96.jpg') }}"><img src="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/29b96.jpg') }}" alt="Pariksha Pe Charcha"></a>
+                                            <a href="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/39b96.jpg') }}"><img src="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/39b96.jpg') }}" width="100" height="75" alt="Pariksha Pe Charcha"></a>
+                                            <a href="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/49b96.jpg') }}"><img src="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/49b96.jpg') }}" title="Pariksha Pe Charcha"></a>
+                                            <a href="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/59b96.jpg') }}"><img src="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/59b96.jpg') }}" alt="Pariksha Pe Charcha"></a>
+                                            <a href="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/69b96.jpg') }}"><img src="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/69b96.jpg') }}" alt="Pariksha Pe Charcha"></a>
+                                            <a href="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/79b96.jpg') }}"><img src="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/79b96.jpg') }}" alt="Pariksha Pe Charcha"></a>
+                                            <a href="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/89b96.jpg') }}"><img src="{{ asset('uploads/uploads/photo-gallery/PARIKSHA_PE_CHARCHA/89b96.jpg') }}" alt="Pariksha Pe Charcha"></a>
+                                            <video controls="controls" style="height: 300px; width:100%;"><source src="{{ asset('uploads/uploads/2020/01/Video-2020-01-16.mp4') }}" type="video/mp4"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" 
+                                                    class="mce_SELRES_start">&#xFEFF;</span></video>
+                                            </div>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section16">
                                         <h3>Faculty List Approved By Affiliating Body</h3>
-                                        <p>contents to be uploaded soon</p> 
+                                        <img src="{{ asset('uploads/uploads/2021/07/ERCAPP1123-1-001-compressed.jpg') }}" alt="image" style="height: 100%; width:100%;">
+                                        <img src="{{ asset('uploads/uploads/2021/07/ERCAPP1123-2-001-compressed.jpg') }}" alt="image" style="height: 100%; width:100%;">
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="Section17">
+                                    <div role="tabpanel" class="tab-pane fade"  id="Section17">
                                         <h3>Vacancy</h3>
-                                        <p>contents to be uploaded soon</p> 
+                                        <p> <a href="{{ asset('uploads/uploads/2019/11/application_form_pdf.pdf')}}" class="button" download title="Download"><i class="fa fa-dot-circle-o"></i>Application Form</a></p> 
+                                        <p> <a href="{{ asset('uploads/uploads/2019/11/B.Ed.-Advertise-Teacher-2019.pdf')}}" class="button" download title="Download"><i class="fa fa-dot-circle-o"></i>B.ED. HEAD/ASSISTANT PROFESSOR VACANCY</a></p> 
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section18">
                                         <h3>B.Ed. Contact</h3>
-                                        <p>contents to be uploaded soon</p> 
+                                        <P>B.Ed. Department,</P>
+                                        <P>R.K.College, Madhubani – 847211 (Bihar)</P>
+                                        <P>E-mail – bedrkcollegemadhubani@gmail.com</P>
+                                        <P>Tel. No. – 06276 – 227666 / 222264</P>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="Section19">
+                                        
+                                            <h3>Download</h3>
+                                           <p> <a href="{{ asset('uploads/uploads/2017/05/16-05-2017.zip')}}" class="button" download title="Download"><i class="fa fa-dot-circle-o"></i>N.C.T.E. INSPECTION HELD ON 16.05.17.</a></p>
+                                           <p> <a href="{{ asset('uploads/uploads/2017/05/APPLICATION-min.pdf')}}" class="button" download title="Download"><i class="fa fa-dot-circle-o"></i>APPLICATION</a></p>
+                                            <p> <a href="{{ asset('uploads/uploads/2017/05/CHALLAN-min.pdf')}}" class="button" download title="Download"><i class="fa fa-dot-circle-o"></i>CHALLAN</a></p>
+                                                <p><a href="{{ asset('uploads/uploads/2017/05/PROSPECTUS-B.ED_.-2017-19.compressed.pdf')}}" class="button" download title="Download"><i class="fa fa-dot-circle-o"></i>PROSPECTUS-B.ED-2017-19</a></p>
+                                                    <p><a href="#" class="button" download title="Download"><i class="fa fa-dot-circle-o"></i>B.-Ed.-Syllabus</a></p>
+                                                        <p>  <a href="{{ asset('uploads/uploads/2017/04/E-MONITORING-PORTAL-_-Student-Report-PDF-min.pdf')}}" class="button" download title="Download"><i class="fa fa-dot-circle-o"></i>E-MONITORING PORTAL _Student Report</a></p>
+                                        
                                     </div>
                                     
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    {{-- </div> --}}
                 </div>
                 <!--//page-content-->
             </div>
@@ -148,4 +218,21 @@
         </div>
         <!--//page-content-->
     </div>
+@endsection
+@section('scriptarea')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+$(document).ready(function() {
+  // add all to same gallery
+  $(".gallery a").attr("data-fancybox","mygallery");
+  // assign captions and title from alt-attributes of images:
+  $(".gallery a").each(function(){
+    $(this).attr("data-caption", $(this).find("img").attr("alt"));
+    $(this).attr("title", $(this).find("img").attr("alt"));
+  });
+  // start fancybox:
+  $(".gallery a").fancybox();
+  });
+  </script> 
 @endsection
