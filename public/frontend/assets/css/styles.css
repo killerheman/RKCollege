@@ -3005,29 +3005,15 @@ ul.custom-list-style li {
     clear: both;
     padding: 0;
     padding: 10px;
-    background-color: #ccc;
-    border-radius: 5px;
+    
   }
   
   .gallery img { /* thumbnails */
-    width: 100px;
-    height: 75px;
+    width: 20%;
+    height: 20%;
+    border: 2px solid maroon;
+    margin: 10px;
   }
   
-  .block {
-    display: inline-block;
-    background-color: #ccc;
-    border-radius: 5px;
-    padding: 8px;
-  }
   
-  pre {
-    background-color: #eee;
-    border-radius: 5px;
-    padding: 8px;
-    clear: both;
-  }
   
-  .highlight {
-    color: red;
-  }

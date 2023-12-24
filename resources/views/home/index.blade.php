@@ -87,7 +87,7 @@
         </div>
         <div class="col-md-4">
             <div class="serviceBox1">
-                <div class="service-icon">
+                <div>
                     <h3 class="title">Important Links</h3>
                 </div>
                 <ul>

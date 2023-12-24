@@ -28,8 +28,8 @@
     @include('home.includes.footer')
     <!--//footer-->
 
-    @yield('scriptarea')
     @include('home.includes.foot')
+    @yield('scriptarea')
 
 </body>
 

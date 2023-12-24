@@ -12,8 +12,6 @@
         <div class="page-content">
             <div class="row page-row">
 
-                <h2>Example of <a href="http://fancyapps.com/fancybox/3/">FancyBox</a> lightbox</h2>
-
 <div class="gallery">
   <a href="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/Chrysanthemum.jpg"><img src="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/tn/Chrysanthemum.jpg" alt="Chrysanthemum: nice flower."></a>
   <a href="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/Desert.jpg"><img src="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/tn/Desert.jpg" alt="Desert mountains"></a>
@@ -37,6 +35,22 @@
     </div>
         <!-- Below we include the jQuery Library -->
 
-
-     
+  
+@endsection
+@section('scriptarea')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+$(document).ready(function() {
+  // add all to same gallery
+  $(".gallery a").attr("data-fancybox","mygallery");
+  // assign captions and title from alt-attributes of images:
+  $(".gallery a").each(function(){
+    $(this).attr("data-caption", $(this).find("img").attr("alt"));
+    $(this).attr("title", $(this).find("img").attr("alt"));
+  });
+  // start fancybox:
+  $(".gallery a").fancybox();
+  });
+  </script> 
 @endsection

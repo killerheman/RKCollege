@@ -11,9 +11,12 @@
         </header>
         <div class="page-content">
             <div class="row page-row">
-               <img src="{{ asset('annual-plan/plan2021-22.png') }}" alt="image" style="height: 100%; width:100%; padding-bottom:10px;"><br>
-               <img src="{{ asset('annual-plan/plan2021-22-2.png') }}" alt="image" style="height: 100%; width:100%">
-                <!--//page-content-->
+                <div class="gallery">
+                    <a href="{{ asset('annual-plan/plan2021-22.png')  }}"><img src="{{ asset('annual-plan/plan2021-22.png')  }}" alt="image"> </a>
+                   
+                     <a href="{{ asset('annual-plan/plan2021-22-2.png') }}"><img src="{{ asset('annual-plan/plan2021-22-2.png') }}" alt="image"> </a>
+                  </div>  
+               <!--//page-content-->
             </div>
             <!--//page-row-->
         </div>

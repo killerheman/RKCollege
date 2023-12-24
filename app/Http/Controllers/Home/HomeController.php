@@ -498,9 +498,7 @@ class HomeController extends Controller
         return view('home.course.mass_media');
     }
 
-
     //Activities
-
     public function sportActivity()
     {
         return view('home.activities.sport_activity');
@@ -615,13 +613,7 @@ class HomeController extends Controller
         return view('home.activities.departmental.socialogy.student_forum');
     }
 
-
-
-
-
-
-
-
-
-
+    public function student_corner(){
+        return view('home.student.student_corner');
+    }
 }

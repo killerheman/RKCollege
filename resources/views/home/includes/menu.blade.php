@@ -293,7 +293,7 @@
                         <li><a href="#">Computer Details</a></li>
                         <li><a href="#">CBSC Program</a></li>
                         <li><a href="#">ICT Facility</a></li>
-                        <li><a href="#">Intership/Training</a></li>
+                        <li><a href="{{ route('student-corner') }}">Student Corner</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -307,8 +307,9 @@
                         <li><a href="{{ route('map') }}">Map of The College</a></li>
                         <li><a href="{{ route('academic') }}">academic calendar</a></li>
                         <li><a href="{{ route('gallery') }}">B.ed Gallery</a></li>
+                        <li><a href="#">Result</a></li>
                         <!-- <li class="dropdown-submenu">
-                            <a class="trigger" tabindex="-1" href="#">SSR<i
+                            <a class="trigger" tabindex="-1" href="#" > SSR<i
                                     class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">SSR Report</a></li>
@@ -328,8 +329,6 @@
                         <li><a href="#"> Meeting Minutes</a></li> -->
                     </ul>
                 </li>
-
-
                 <li class="nav-item"><a href="{{ route('nirf') }}" >NIRF</a></li>
                 <li class="nav-item"><a href="#" >Alumni</a></li>
             </ul>

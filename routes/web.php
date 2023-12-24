@@ -174,6 +174,7 @@ Route::get('/medical-facilities', [HomeController::class, 'medicalFacilites'])->
 Route::get('/college-infrastructure', [HomeController::class, 'collegeInfrastructure'])->name('collegeInfrastructure');
 
 //Student Corners Menu
+Route::get('/student-corner',[HomeController::class,'student_corner'])->name('student-corner');
 Route::get('/result', [HomeController::class, 'result'])->name('result');
 Route::get('/examination-datesheet', [HomeController::class, 'examinationDatesheet'])->name('examinationDatesheet');
 Route::get('/examination-form', [HomeController::class, 'examinationForm'])->name('examinationForm');

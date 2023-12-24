@@ -11,7 +11,11 @@
         </header>
         <div class="page-content">
             <div class="row page-row">
-               <img src="{{ asset('college-map/map.jpg') }}" alt="image" style="height: 100%; width:100%">
+                <div class="gallery">
+                    
+                    <a href="{{ asset('college-map/map.jpg') }}"><img src="{{ asset('college-map/map.jpg')}}" alt="image"> </a>
+                   
+                    </div>
                 <!--//page-content-->
             </div>
             <!--//page-row-->
