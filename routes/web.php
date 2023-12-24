@@ -33,13 +33,43 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 //About Menu
-Route::get('/about-college', [HomeController::class, 'aboutCollege'])->name('aboutCollege');
-Route::get('/vision-mission', [HomeController::class, 'visionMission'])->name('visionMission');
-Route::get('/from-vice-chancellor-desk', [HomeController::class, 'viceChancellorDesk'])->name('viceChancellorDesk');
+Route::get('/about-us', [HomeController::class, 'about'])->name('about');
+Route::get('/iso-certified', [HomeController::class, 'isoCertified'])->name('isoCertified');
+Route::get('/history', [HomeController::class, 'history'])->name('history');
+Route::get('/mission-vision', [HomeController::class, 'missionVission'])->name('missionVission');
+Route::get('/kulgeet', [HomeController::class, 'kulgeet'])->name('kulgeet');
+Route::get('/mou', [HomeController::class, 'mou'])->name('mou');
+Route::get('/naac', [HomeController::class, 'naac'])->name('naac');
+Route::get('/instituation-practice', [HomeController::class, 'practice'])->name('practice');
+Route::get('/lab', [HomeController::class, 'lab'])->name('lab');
+Route::get('/auditoirum', [HomeController::class, 'auditoirum'])->name('auditoirum');
+Route::get('/conference-hall', [HomeController::class, 'conferenceHall'])->name('conferenceHall');
+Route::get('/indoor-stadium', [HomeController::class, 'indoorStadium'])->name('indoorStadium');
+Route::get('/media-center', [HomeController::class, 'mediaCenter'])->name('mediaCenter');
+Route::get('/smart-classes', [HomeController::class, 'smartClasses'])->name('smartClasses');
+
 Route::get('/from-principal-desk', [HomeController::class, 'principalDesk'])->name('principalDesk');
 Route::get('/college-achievements', [HomeController::class, 'collegeAchievements'])->name('collegeAchievements');
-Route::get('/administration-committees', [HomeController::class, 'administrationCommittees'])->name('administrationCommittees');
-Route::get('/organogram', [HomeController::class, 'organogram'])->name('organogram');
+
+//Administration
+Route::get('/facility-incharge', [HomeController::class, 'facilityIncharge'])->name('facilityIncharge');
+Route::get('/administrative-structure', [HomeController::class, 'administrativeStructure'])->name('administrativeStructure');
+Route::get('/administrative-section', [HomeController::class, 'administrativeSection'])->name('administrativeSection');
+Route::get('/account-section', [HomeController::class, 'accountSection'])->name('accountSection');
+Route::get('/laboratory', [HomeController::class, 'laboratory'])->name('laboratory');
+Route::get('/library', [HomeController::class, 'library'])->name('library');
+
+
+//Academics
+Route::get('/admission', [HomeController::class, 'admission'])->name('admission');
+Route::get('/academic-activities', [HomeController::class, 'activity'])->name('activity');
+Route::get('/academic-curriculum', [HomeController::class, 'curriculum'])->name('curriculum');
+Route::get('/enhancement-program', [HomeController::class, 'enhancementProgram'])->name('enhancementProgram');
+Route::get('/pso', [HomeController::class, 'pso'])->name('pso');
+Route::get('/other-program', [HomeController::class, 'otherProgram'])->name('otherProgram');
+Route::get('/orientation-class', [HomeController::class, 'orientationClass'])->name('orientationClass');
+Route::get('/social-awareness', [HomeController::class, 'socialAwareness'])->name('socialAwareness');
+Route::get('/add-on-course', [HomeController::class, 'addOnCourse'])->name('addOnCourse');
 Route::get('/annual-report', [HomeController::class, 'annualReport'])->name('annualReport');
 
 //Academics Menu
@@ -86,6 +116,7 @@ Route::get('/medical-facilities', [HomeController::class, 'medicalFacilites'])->
 Route::get('/college-infrastructure', [HomeController::class, 'collegeInfrastructure'])->name('collegeInfrastructure');
 
 //Student Corners Menu
+Route::get('/student-corner',[HomeController::class,'student_corner'])->name('student-corner');
 Route::get('/result', [HomeController::class, 'result'])->name('result');
 Route::get('/examination-datesheet', [HomeController::class, 'examinationDatesheet'])->name('examinationDatesheet');
 Route::get('/examination-form', [HomeController::class, 'examinationForm'])->name('examinationForm');

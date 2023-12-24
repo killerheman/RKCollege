@@ -20,24 +20,24 @@
                         data-close-others="false" href="#" accesskey="2">About<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">ISO Certified</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Mission & Vision</a></li>
-                        <li><a href="#">Kulgeet</a></li>
-                        <li><a href="#">MOU</a></li>
-                        <li><a href="#">Progress according to NAAC</a></li>
-                        <li><a href="#">Institution Best Practice</a></li>
+                        <li><a href="{{ route('isoCertified')}}">ISO Certified</a></li>
+                        <li><a href="{{route('history')}}">History</a></li>
+                        <li><a href="{{route('missionVission')}}">Mission & Vision</a></li>
+                        <li><a href="{{route('kulgeet')}}">Kulgeet</a></li>
+                        <li><a href="{{route('mou')}}">MOU</a></li>
+                        <li><a href="{{route('naac')}}">Progress according to NAAC</a></li>
+                        <li><a href="{{route('practice')}}">Institution Best Practice</a></li>
                         <li class="dropdown-submenu">
                             <a class="trigger" tabindex="-1" href="Academics-CoursesUG.html">Infrastructures<i
                                     class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a tabindex="-1" href="#">Labs</a>
+                                <li><a tabindex="-1" href="{{route('lab')}}">Labs</a>
                                 </li>
-                                <li><a href="#">Late P.N. Singh Memorial Auditorium</a></li>
-                                <li><a href="#">Conference/Seminar Hall</a></li>
-                                <li><a href="#">Indoor Stadium</a></li>
-                                <li><a href="#">Media Center</a></li>
-                                <li><a href="#">Smart Classes & Class Rooms</a></li>
+                                <li><a href="{{route('auditoirum')}}">Late P.N. Singh Memorial Auditorium</a></li>
+                                <li><a href="{{route('conferenceHall')}}">Conference/Seminar Hall</a></li>
+                                <li><a href="{{route('indoorStadium')}}">Indoor Stadium</a></li>
+                                <li><a href="{{route('mediaCenter')}}">Media Center</a></li>
+                                <li><a href="{{route('smartClasses')}}">Smart Classes & Class Rooms</a></li>
                             </ul>
                         </li>
 
@@ -49,12 +49,12 @@
                         data-close-others="false" href="#" accesskey="4">Administration<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Faculty Incharge</a></li>
-                        <li><a href="#">Administrative Structure</a></li>
-                        <li><a href="#">Administrative Section</a></li>
-                        <li><a href="#">Account Section</a></li>
-                        <li><a href="#">Laboratory</a></li>
-                        <li><a href="#">Library Section</a></li>
+                        <li><a href="{{route('facilityIncharge')}}">Faculty Incharge</a></li>
+                        <li><a href="{{route('administrativeStructure')}}">Administrative Structure</a></li>
+                        <li><a href="{{route('administrativeSection')}}">Administrative Section</a></li>
+                        <li><a href="{{route('accountSection')}}">Account Section</a></li>
+                        <li><a href="{{route('laboratory')}}">Laboratory</a></li>
+                        <li><a href="{{route('library')}}">Library Section</a></li>
 
                     </ul>
                 </li>
@@ -64,16 +64,16 @@
                         data-close-others="false" href="#" accesskey="3">Academics<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Admission</a></li>
-                        <li><a href="#">Academic Activities</a></li>
-                        <li><a href="#">Academic Curriculum</a></li>
-                        <li><a href="#">Capability & Efficiency Enhancement Programs</a></li>
-                        <li><a href="#">PO,PSO & CO</a></li>
-                        <li><a href="#">Other Programs</a></li>
-                        <li><a href="#">Orientation & Bridge Classes</a></li>
-                        <li><a href="#">Social Awareness & Moral Builidng</a></li>
-                        <li><a href="#">UGC Sponsored Add-on Courses</a></li>
-                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="{{route('admission')}}">Admission</a></li>
+                        <li><a href="{{route('activity')}}">Academic Activities</a></li>
+                        <li><a href="{{route('curriculum')}}">Academic Curriculum</a></li>
+                        <li><a href="{{route('enhancementProgram')}}">Capability & Efficiency Enhancement Programs</a></li>
+                        <li><a href="{{route('pso')}}">PO,PSO & CO</a></li>
+                        <li><a href="{{route('otherProgram')}}">Other Programs</a></li>
+                        <li><a href="{{route('orientationClass')}}">Orientation & Bridge Classes</a></li>
+                        <li><a href="{{route('socialAwareness')}}">Social Awareness & Moral Builidng</a></li>
+                        <li><a href="{{route('addOnCourse')}}">UGC Sponsored Add-on Courses</a></li>
+                        <li><a href="{{route('annualReport')}}">Annual Report</a></li>
 
                     </ul>
                 </li>
@@ -293,7 +293,7 @@
                         <li><a href="#">Computer Details</a></li>
                         <li><a href="#">CBSC Program</a></li>
                         <li><a href="#">ICT Facility</a></li>
-                        <li><a href="#">Intership/Training</a></li>
+                        <li><a href="{{ route('student-corner') }}">Student Corner</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -309,7 +309,7 @@
                         <li><a href="{{ route('gallery') }}">B.ed Gallery</a></li>
                         <li><a href="#">Result</a></li>
                         <!-- <li class="dropdown-submenu">
-                            <a class="trigger" tabindex="-1" href="#">SSR<i
+                            <a class="trigger" tabindex="-1" href="#" > SSR<i
                                     class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">SSR Report</a></li>
@@ -329,8 +329,6 @@
                         <li><a href="#"> Meeting Minutes</a></li> -->
                     </ul>
                 </li>
-
-
                 <li class="nav-item"><a href="{{ route('nirf') }}" >NIRF</a></li>
                 <li class="nav-item"><a href="#" >Alumni</a></li>
             </ul>
