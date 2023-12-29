@@ -305,7 +305,7 @@
                         <li><a href="{{ route('faculty') }}">Faculty of B.ed</a></li>
                         <li><a href="{{ route('infrastructure') }}">Infrastructure & facility</a></li>
                         <li><a href="{{ route('map') }}">Map of The College</a></li>
-                        <li><a href="{{ route('academic') }}">academic calendar</a></li>
+                        <li><a href="{{ route('academic') }}">Academic Calendar</a></li>
                         <li><a href="{{ route('gallery') }}">B.ed Gallery</a></li>
                         <li><a href="#">Result</a></li>
                         <!-- <li class="dropdown-submenu">

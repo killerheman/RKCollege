@@ -1,6 +1,52 @@
 @extends('home.includes.layout', ['title' => 'About College'])
 
 @section('content')
+<style>
+    
+    details {
+  margin: 5px;
+  font-size: 18px;
+}
+details > * {
+  padding: .75rem;
+}
+summary {
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background: maroon;
+  cursor: pointer;
+  position: relative;
+ 
+}
+summary::marker {
+  content: "";
+}
+summary::before {
+  content:"";
+  position:absolute;
+  inset: .75rem;
+  left: auto;
+  aspect-ratio: 1;
+  background: 
+   conic-gradient(from 90deg at 33% 33%, #0000 90deg, #fff 0) 
+    100% 100%/60% 60%;
+  clip-path: inset(1px);
+}
+details[open] summary::before {
+  background: linear-gradient(#fff 0 0) 50%/100% 25% no-repeat;
+}
+details[open] summary {
+  border-radius: 5px 5px 0 0;
+}
+details > div {
+  background: #ddd;
+  border-radius: 0 0 5px 5px;
+  transition: max-height 0.3s ease-in-out;
+}
+</style>
     <div class="page-wrapper">
 
         <header class="page-heading clearfix">
@@ -26,7 +72,7 @@
                                     <li role="presentation"><a href="#Section7" aria-controls="home" role="tab" data-toggle="tab">Student List</a></li>
                                     <li role="presentation"><a href="#Section8" aria-controls="home" role="tab" data-toggle="tab">Audit Report Annually</a></li>
                                     <li role="presentation"><a href="#Section9" aria-controls="home" role="tab" data-toggle="tab"> Letter for B.Ed. Course(Govt. of Bihar)</a></li>
-                                    <li role="presentation"><a href="#Section10" aria-controls="home" role="tab" data-toggle="tab">Hyperlinks</a></li>
+                                    {{-- <li role="presentation"><a href="#Section10" aria-controls="home" role="tab" data-toggle="tab">Hyperlinks</a></li> --}}
                                     <li role="presentation"><a href="#Section11" aria-controls="home" role="tab" data-toggle="tab">IQAC</a></li>
                                     <li role="presentation"><a href="#Section12" aria-controls="home" role="tab" data-toggle="tab">FDR</a></li>
                                     <li role="presentation"><a href="#Section13" aria-controls="home" role="tab" data-toggle="tab">Building Completion Certificate</a></li>
@@ -90,63 +136,176 @@
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section7">
                                         <h3>Student List</h3>
-		
-                                        <div class="container mt-5">
-                                            <div class="accordion" id="accordionExample">
-                                                <!-- Panel 1 -->
-                                                <div class="card">
-                                                    <div class="card-header" id="headingOne">
-                                                        <h2 class="mb-0">
-                                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                                <i class="fas fa-plus"></i> Section 1
-                                                            </button>
-                                                        </h2>
-                                                    </div>
-                                        
-                                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                                        <div class="card-body">
-                                                            Content for Section 1 goes here.
-                                                        </div>
-                                                    </div>
+                                        <div class="accordion">
+                                            <details>
+                                                <summary>2014-15</summary>
+                                              <div>
+                                                <a href="{{ asset('uploads/uploads/2017/04/B.Ed_.-STUDENT-LIST-BY-L.N.M.U.-2014-15.pdf') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST BY L.N.M.U. 2014-15</a>
+                                              </div>
+                                            </details>
+                                              <details>
+                                                <summary>2015-17</summary>
+                                                <div>
+                                                    <a href="{{ asset('uploads/uploads/2017/04/STUDENTS-LIST-1-2015-17.pdf') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST-1 BY L.N.M.U. 2015-17</a><br>
+                                                    <a href="{{ asset('uploads/uploads/2017/04/STUDENTS-LIST-2-2015-17.pdf') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST-2 BY L.N.M.U. 2015-17</a><br>
+                                                    <a href="{{ asset('uploads/uploads/2017/04/STUDENTS-LIST-3-2015-17.pdf') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST-3 BY L.N.M.U. 2015-17</a>
+                                                   </div>
+                                            
+                                            </details>
+                                              <details>
+                                                <summary>2016-18</summary>
+                                                <div>
+                                                    <a href="{{ asset('uploads/uploads/2017/04/STUDENTS-LIST-1-2016-18.pdf') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST-1 BY L.N.M.U. 2016-18</a><br>
+                                                    <a href="{{ asset('uploads/uploads/2017/04/STUDENTS-LIST-2-2016-18.pdf') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST-2 BY L.N.M.U. 2016-18</a><br>
+                                                    <a href="{{ asset('uploads/uploads/2017/04/STUDENTS-LIST-3-2016-18.pdf') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST-3 BY L.N.M.U. 2016-18</a>
                                                 </div>
-                                        
-                                                <!-- Panel 2 -->
-                                                <div class="card">
-                                                    <div class="card-header" id="headingTwo">
-                                                        <h2 class="mb-0">
-                                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                                <i class="fas fa-plus"></i> Section 2
-                                                            </button>
-                                                        </h2>
-                                                    </div>
-                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                                        <div class="card-body">
-                                                            Content for Section 2 goes here.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                        
-                                                <!-- Add more panels as needed -->
-                                        
+                                            </details>
+                                              <details>
+                                                <summary>2017-19</summary>
+                                                <div>
+                                                    <a href="{{ asset('uploads/uploads/2018/03/2017-19.xlsx') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST-3 BY L.N.M.U. 2017-19</a>
+                                                   </div>
+                                            </details>
+                                              <details>
+                                                <summary>2018-20</summary>
+                                                <div>
+                                                   
+                                                    <a href="{{ asset('uploads/uploads/2019/09/B.ED.-STUDENTS-DETAILS-2018-20.docx') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST-1 BY L.N.M.U. 2018-20</a>
+                                                   </div>
+                                            </details>
+                                              <details>
+                                                <summary>2019-21</summary>
+                                                <div>
+                                                   
+                                                    <a href="{{ asset('uploads/uploads/2019/08/STUDENTS-DETAILS-B.Ed_.-2019-21.xlsx') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST OF SESSION - 2019-21</a>
+                                                   </div>
+                                            </details>
+                                              <details>
+                                                <summary>2020-22</summary>
+                                                <div>
+                                                    
+                                                    <a href="{{ asset('uploads/uploads/2021/01/ADMITTED-2020-2022-converted.pdf') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENTS LIST OF SESSION 2020-22</a>
+                                                   </div>
+                                            </details>
+                                              <details>
+                                                <summary>2021-23</summary>
+                                                <div>
+                                                    
+                                                    <a href="{{ asset('uploads/uploads/2021/11/B.ED.-ADMITTED-STUDENTS-LIST-OF-2021-23.pdf') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST OF SESSION - 2021-23</a>
+                                                   </div>
+                                            </details>
+                                              <details>
+                                                <summary>2022-24</summary>
+                                                <div>
+                                                    
+                                                    <a href="{{ asset('uploads/uploads/2022/10/B.ED.-2022-24.pdf') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST OF SESSION - 2022-24</a>
+                                                   </div>
+                                                 </details>
+                                              <details>
+                                                <summary>2023-25</summary>
+                                                <div>
+                                                    
+                                                    <a href="{{ asset('uploads/uploads/2023/07/admitted-2023-25.xlsx') }}" class="button" download><i class="fa fa-download"></i> B.Ed. STUDENT LIST OF SESSION - 2023-25</a>
+                                                   </div>
+                                                 </details>
                                             </div>
-                                        </div>
-                                           
-                                           
-                                      
                                         
                                         </div>
+                                
+                                    
                                     <div role="tabpanel" class="tab-pane fade" id="Section8">
                                         <h3>Audit Report Annually</h3>
-                                        <p>contents to be uploaded soon</p>
+                                        <div class="accordion">
+                                            <details>
+                                                <summary>2012-13</summary>
+                                              <div>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-1</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-2</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-3</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-4</a>
+                                              </div>
+                                            </details>
+                                              <details>
+                                                <summary>2013-14</summary>
+                                                <div>
+                                                    
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-1</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-2</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-3</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-4</a>
+                                                </div>
+                                            
+                                            </details>
+                                              <details>
+                                                <summary>2014-15</summary>
+                                                <div>
+                                                   
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-1</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-2</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-3</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-4</a>
+                                                </div>
+                                            </details>
+                                              <details>
+                                                <summary>2015-16</summary>
+                                                <div>
+                                                   
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-1</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-2</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-3</a><br>
+                                                <a href="#" class="button" download><i class="fa fa-download"></i> List-4</a>
+                                                </div>
+                                            </details>
+                                              <details>
+                                                <summary>2016-17</summary>
+                                                <div>
+                                                    <a href="{{ asset('uploads/uploads/2019/10/2016-17-1.pdf') }}" class="button" download><i class="fa fa-download"></i> List-1</a>
+                                                   </div>
+                                            </details>
+                                              <details>
+                                                <summary>2017-18</summary>
+                                                <div>
+                                                   
+                                                    <a href="{{ asset('uploads/uploads/2019/10/2017-18.pdf') }}" class="button" download><i class="fa fa-download"></i> List-1</a>
+                                                   </div>
+                                            </details>
+                                              <details>
+                                                <summary>2018-19</summary>
+                                                <div>
+                                                    
+                                                    <a href="{{ asset('uploads/uploads/2019/10/2018-19.pdf') }}" class="button" download><i class="fa fa-download"></i> List-1</a>
+                                                   </div>
+                                            </details>
+                                              <details>
+                                                <summary>2019-20</summary>
+                                                <div>
+                                                    
+                                                    <a href="{{ asset('uploads/uploads/2020/09/BedAuditrkc.pdf') }}" class="button" download><i class="fa fa-download"></i> List-1</a>
+                                                   </div>
+                                            </details>
+                                              <details>
+                                                <summary>2020-21</summary>
+                                                <div>
+                                                    
+                                                    <a href="{{ asset('uploads/uploads/2023/02/AUDIT-REPORT-2020-21.pdf') }}" class="button" download><i class="fa fa-download"></i> List-1</a>
+                                                   </div>
+                                                 </details>
+                                              <details>
+                                                <summary>2021-22</summary>
+                                                <div>
+                                                    <a href="{{ asset('uploads/uploads/2023/02/AUDIT-REPORT-2021-2022.pdf') }}" class="button" download><i class="fa fa-download"></i> List-1</a>
+                                                   </div>
+                                                 </details>
+                                            </div>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" style="overflow: hidden; height:600px; width:100%;" id="Section9">
                                         <h3>Letter for B.Ed. Course(Govt. of Bihar)</h3>
                                         <object data="{{ asset('uploads/uploads/2019/01/Letter-ilovepdf-compressed.pdf') }}" style="height:100%; width:100%;"></object>
                                      </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="Section10">
+                                    {{-- <div role="tabpanel" class="tab-pane fade" id="Section10">
                                         <h3>Hyperlinks</h3>
                                         <p>contents to be uploaded soon</p>
-                                    </div>
+                                    </div> --}}
                                     <div role="tabpanel" class="tab-pane fade" id="Section11">
                                         <h3>IQAC</h3>
                                         <p>contents to be uploaded soon</p>                                 
@@ -220,8 +379,9 @@
     </div>
 @endsection
 @section('scriptarea')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
 <script>
 $(document).ready(function() {
   // add all to same gallery
