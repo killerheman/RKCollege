@@ -332,7 +332,7 @@ class HomeController extends Controller
     {
         return view('home.about.isoCertified');
     }
-    public function history()
+    public function CollegeHistory()
     {
         return view('home.about.history');
     }
@@ -449,6 +449,170 @@ class HomeController extends Controller
     {
         return view('home.academics.annualReport');
     }
+
+
+    //Courses
+
+    public function vedicMathematics()
+    {
+        return view('home.course.vedicMathmatics');
+    }
+    public function skillDevelopmentProgram()
+    {
+        return view('home.course.skillDevelopmentProgram');
+    }
+    public function yogaPhilosophy()
+    {
+        return view('home.course.yogaphilosphy');
+    }
+    public function indology()
+    {
+        return view('home.course.indology');
+    }
+    public function genderSociety()
+    {
+        return view('home.course.society');
+    }
+    public function filmCulture()
+    {
+        return view('home.course.film_culture');
+    }
+    public function humanRight()
+    {
+        return view('home.course.human_right');
+    }
+    public function entrepreneurship()
+    {
+        return view('home.course.entrepreneurship');
+    }
+    public function recordDocument()
+    {
+        return view('home.course.record_document');
+    }
+    public function emotionalIntelligence()
+    {
+        return view('home.course.emotional_intelligence');
+    }
+    public function massMedia()
+    {
+        return view('home.course.mass_media');
+    }
+
+    //Activities
+    public function sportActivity()
+    {
+        return view('home.activities.sport_activity');
+    }
+    public function nss()
+    {
+        return view('home.activities.nss');
+    }
+    public function cultureActivities()
+    {
+        return view('home.activities.culture_activities');
+    }
+    public function ncc()
+    {
+        return view('home.activities.ncc');
+    }
+
+    //departmental Activities
+
+    public function commerceAcademicActivity()
+    {
+        return view('home.activities.departmental.commerce.academic_activity');
+    }
+    public function commerceStudentForum()
+    {
+        return view('home.activities.departmental.commerce.student_forum');
+    }
+
+    public function economicsAcademicActivity()
+    {
+        return view('home.activities.departmental.economics.academic_activity');
+    }
+    public function economicsStudentForum()
+    {
+        return view('home.activities.departmental.economics.student_forum');
+    }
+
+    public function hindiAcademicActivity()
+    {
+        return view('home.activities.departmental.hindi.academic_activity');
+    }
+    public function hindiStudentForum()
+    {
+        return view('home.activities.departmental.hindi.student_forum');
+    }
+
+
+    public function englishAcademicActivity()
+    {
+        return view('home.activities.departmental.english.academic_activity');
+    }
+    public function englishStudentForum()
+    {
+        return view('home.activities.departmental.english.student_forum');
+    }
+
+    public function sanskritAcademicActivity()
+    {
+        return view('home.activities.departmental.sanskrit.academic_activity');
+    }
+    public function sanskritStudentForum()
+    {
+        return view('home.activities.departmental.sanskrit.student_forum');
+    }
+
+    public function philosophyAcademicActivity()
+    {
+        return view('home.activities.departmental.philosophy.academic_activity');
+    }
+    public function philosophyStudentForum()
+    {
+        return view('home.activities.departmental.philosophy.student_forum');
+    }
+    public function urduAcademicActivity()
+    {
+        return view('home.activities.departmental.urdu.academic_activity');
+    }
+    public function urduStudentForum()
+    {
+        return view('home.activities.departmental.urdu.student_forum');
+    }
+    public function historyAcademicActivity()
+    {
+        return view('home.activities.departmental.history.academic_activity');
+    }
+    public function historyStudentForum()
+    {
+        return view('home.activities.departmental.history.student_forum');
+    }
+    public function psychologyAcademicActivity()
+    {
+        return view('home.activities.departmental.psychology.academic_activity');
+    }
+    public function psychologyStudentForum()
+    {
+        return view('home.activities.departmental.psychology.student_forum');
+    }
+    public function politicalScienceAcademicActivity()
+    {
+        return view('home.activities.departmental.political_science.academic_activity');
+    }
+    public function politicalScienceStudentForum()
+    {
+        return view('home.activities.departmental.political_science.student_forum');
+    }
+    public function socialogyAcademicActivity()
+    {
+        return view('home.activities.departmental.socialogy.academic_activity');
+    }
+    public function socialogyStudentForum()
+    {
+        return view('home.activities.departmental.socialogy.student_forum');
+    }
+
     public function student_corner(){
         return view('home.student.student_corner');
     }

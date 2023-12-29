@@ -21,14 +21,14 @@
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('isoCertified')}}">ISO Certified</a></li>
-                        <li><a href="{{route('history')}}">History</a></li>
+                        <li><a href="{{route('CollegeHistory')}}">History</a></li>
                         <li><a href="{{route('missionVission')}}">Mission & Vision</a></li>
                         <li><a href="{{route('kulgeet')}}">Kulgeet</a></li>
                         <li><a href="{{route('mou')}}">MOU</a></li>
                         <li><a href="{{route('naac')}}">Progress according to NAAC</a></li>
                         <li><a href="{{route('practice')}}">Institution Best Practice</a></li>
                         <li class="dropdown-submenu">
-                            <a class="trigger" tabindex="-1" href="Academics-CoursesUG.html">Infrastructures<i
+                            <a class="trigger" tabindex="-1" href="#">Infrastructures<i
                                     class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a tabindex="-1" href="{{route('lab')}}">Labs</a>
@@ -82,18 +82,18 @@
                         data-close-others="false" href="#" accesskey="4">Courses<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('informationBulletinAdmission') }}">Vedic Mathematics</a>
+                        <li><a href="{{ route('vedicMathematics') }}">Vedic Mathematics</a>
                         </li>
-                        <li><a href="{{ route('admissionSchedule') }}">Entrepreneurship & Skill Development Program</a></li>
-                        <li><a href="{{ route('eligibilityCriteria') }}">Yoga Philosophy</a></li>
-                        <li><a href="{{ route('admissionProcedure') }}">Indology</a></li>
-                        <li><a href="{{ route('seatsOffered') }}">Gender & Society</a></li>
-                        <li><a href="http://lnmu.ac.in/">Film & Culture</a></li>
-                        <li><a href="http://lnmu.ac.in/">Human Right</a></li>
-                        <li><a href="http://lnmu.ac.in/">Entrepreneurship</a></li>
-                        <li><a href="http://lnmu.ac.in/">Record & Document Management</a></li>
-                        <li><a href="http://lnmu.ac.in/">Emotional Intelligence</a></li>
-                        <li><a href="http://lnmu.ac.in/">Mass Media</a></li>
+                        <li><a href="{{ route('skillDevelopmentProgram') }}">Entrepreneurship & Skill Development Program</a></li>
+                        <li><a href="{{ route('yogaPhilosophy') }}">Yoga Philosophy</a></li>
+                        <li><a href="{{ route('indology') }}">Indology</a></li>
+                        <li><a href="{{ route('genderSociety') }}">Gender & Society</a></li>
+                        <li><a href="{{ route('filmCulture') }}">Film & Culture</a></li>
+                        <li><a href="{{ route('humanRight') }}">Human Right</a></li>
+                        <li><a href="{{ route('entrepreneurship') }}">Entrepreneurship</a></li>
+                        <li><a href="{{ route('recordDocument') }}">Record & Document Management</a></li>
+                        <li><a href="{{ route('emotionalIntelligence') }}">Emotional Intelligence</a></li>
+                        <li><a href="{{ route('massMedia') }}">Mass Media</a></li>
 
                     </ul>
                 </li>
@@ -103,8 +103,8 @@
                         data-close-others="false" href="#" accesskey="6">Activities<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Sports Activities</a></li>
-                        <li><a href="#">NSS</a></li>
+                        <li><a href="{{route('sportActivity')}}">Sports Activities</a></li>
+                        <li><a href="{{route('nss')}}">NSS</a></li>
                         <li class="dropdown-submenu">
                             <a class="trigger" tabindex="-1" href="#">Departmental Activities<i
                                     class="fa fa-angle-right"></i></a>
@@ -116,103 +116,103 @@
                                     <a class="trigger" tabindex="-1" href="#">Commerce<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('commerceAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('commerceStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">Economics<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('economicsAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('economicsStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">Hindi<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('hindiAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('hindiStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">English<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('englishAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('englishStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">Sanskrit<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('sanskritAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('sanskritStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">Philosophy<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('philosophyAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('philosophyStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">AIHC<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('aihcAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('aihcStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">Urdu<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('urduAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('urduStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">History<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('historyAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('historyStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">Psychology<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('psychologyAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('psychologyStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">Political Science<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('politicalScienceAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('politicalScienceStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="trigger" tabindex="-1" href="#">Socialogy<i
                                             class="fa fa-angle-right"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Academic Activity</a></li>
-                                        <li><a href="#">Student Forum</a></li>
+                                        <li><a href="{{route('socialogyAcademicActivity')}}">Academic Activity</a></li>
+                                        <li><a href="{{route('socialogyStudentForum')}}">Student Forum</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
 
-                        <li><a href="#">Cultural Activities</a></li>
-                        <li><a href="#">NCC</a></li>
+                        <li><a href="{{route('cultureActivities')}}">Cultural Activities</a></li>
+                        <li><a href="{{route('ncc')}}">NCC</a></li>
 
                     </ul>
                 </li>
