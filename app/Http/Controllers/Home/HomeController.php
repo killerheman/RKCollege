@@ -317,10 +317,42 @@ class HomeController extends Controller
         return view('home.bed.map');
     }
     public function accreditation(){
-        return view('home.naac.accreditation');
+        return view('home.about.naac.accreditation');
     }
     public function AnnualPlan(){
-        return view('home.naac.annualplan');
+        return view('home.about.naac.annualplan');
+    }
+    public function iqacMeeting(){
+        return view('home.about.naac.iqac');
+    }
+    public function aqarNaac(){
+        return view('home.about.naac.aqar');
+    }
+    public function iiqa(){
+        return view('home.about.naac.iiqa');
+    }
+    public function sanctioned(){
+        return view('home.about.naac.sanctionedpost');
+    }
+    public function classRoom(){
+
+        $imageFolder = public_path('uploads/uploads/photo-gallery/class_room');
+        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE); 
+        $imageFileNames = array_map('basename', $imageFiles);
+        return view('home.about.naac.classroom ', compact('imageFileNames'));
+    }
+    public function computerDetails(){
+        return view('home.about.naac.computerdetails');
+    }
+    public function cbscProgram(){
+        return view('home.about.naac.cbscprogram');
+    }
+    public function ictFacility(){
+        $imageFolder = public_path('uploads/uploads/photo-gallery/ict');
+        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE); 
+        $imageFileNames = array_map('basename', $imageFiles);
+        return view('home.about.naac.ictfacility', compact('imageFileNames'));
+        
     }
 
     //About Section

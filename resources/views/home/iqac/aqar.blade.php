@@ -111,7 +111,6 @@
             <div class="row page-row">
                 @include('home.sidebar.iqac', ['active' => 2])
 
-
                     <h3 class="title" >AQAR</h3><br/>
                     <div class="container" >
                         <div class="col-md-10">

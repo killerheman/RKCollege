@@ -214,7 +214,14 @@ Route::get('infrastructure-bed',[HomeController::class,'infrastructure'])->name(
 Route::get('map-college',[HomeController::class,'map'])->name('map');
 Route::get('annual-system',[HomeController::class,'AnnualPlan'])->name('annualsystem');
 Route::get('accreditation-clg',[HomeController::class,'accreditation'])->name('accreditation');
-
+Route::get('iqac-meeting',[HomeController::class,'iqacMeeting'])->name('iqacMeeting');
+Route::get('aqar-naac',[HomeController::class,'aqarNaac'])->name('aqarNaac');
+Route::get('iiqa-naac',[HomeController::class,'iiqa'])->name('iiqa');
+Route::get('sanctioned-post',[HomeController::class,'sanctioned'])->name('sanctioned');
+Route::get('class-room',[HomeController::class,'classRoom'])->name('classroom');
+Route::get('computer-details',[HomeController::class,'computerDetails'])->name('computerdetails');
+Route::get('cbsc-program',[HomeController::class,'cbscProgram'])->name('cbscprogram');
+Route::get('ict-facility',[HomeController::class,'ictFacility'])->name('ictfacility');
 
 
 

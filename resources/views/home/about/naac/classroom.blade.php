@@ -5,23 +5,22 @@
 
         <header class="page-heading clearfix">
             <div class="text-effect" data-content="About College">
-                <span>Accreditation</span>
+                <span>CLASS-ROOM FACILITY</span>
             </div>
             <!--//breadcrumbs-->
         </header>
-        <div class="page-content" >
-            <div class="row page-row">
-                <div class="gallery">
-                    
-                    <a href="{{ asset('/uploads/uploads/2018/02/NAAC2-001-min.jpg') }}"><img src="{{ asset('/uploads/uploads/2018/02/NAAC2-001-min.jpg') }}" alt="image"> </a>
-                   
-                     <a href="{{ asset('/uploads/uploads/2018/02/NAAC3-001-min.jpg') }}"><img src="{{ asset('/uploads/uploads/2018/02/NAAC3-001-min.jpg') }}" alt="image"> </a>
-                  </div>
+        <div class="page-content">
+            <div class="gallery">
+                
+                @foreach($imageFileNames as $fileName)
+                <a href="{{asset('uploads/uploads/photo-gallery/class_room/' . $fileName)  }}"><img src="{{ asset('uploads/uploads/photo-gallery/class_room/' . $fileName) }}" alt="{{ $fileName }}"></a>
+                @endforeach
+               
             </div>
+            <!--//page-row-->
         </div>
+        <!--//page-content-->
     </div>
-
-    
 @endsection
 @section('scriptarea')
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

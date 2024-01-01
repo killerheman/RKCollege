@@ -284,15 +284,15 @@
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('accreditation') }}">Accreditation</a></li>
                         <li><a href="{{ route('annualsystem') }}">Annual Gender Sensitization Action Plan</a></li>
-                        <li><a href="#">IQAC Meeting Minutes</a></li>
-                        <li><a href="#">AQAR</a></li>
-                        <li><a href="#">IIQA</a></li>
+                        <li><a href="{{ route('iqacMeeting') }}">IQAC Meeting Minutes</a></li>
+                        <li><a href="{{ route('aqarNaac') }}">AQAR</a></li>
+                        <li><a href="{{ route('iiqa') }}">IIQA</a></li>
                         <li><a href="#">SSR 2013 Report</a></li>
-                        <li><a href="#">Sanctioned Post of Faculty</a></li>
-                        <li><a href="#">Class Room Facility</a></li>
-                        <li><a href="#">Computer Details</a></li>
-                        <li><a href="#">CBSC Program</a></li>
-                        <li><a href="#">ICT Facility</a></li>
+                        <li><a href="{{ route('sanctioned') }}">Sanctioned Post of Faculty</a></li>
+                        <li><a href="{{ route('classroom') }}">Class Room Facility</a></li>
+                        <li><a href="{{ route('computerdetails') }}">Computer Details</a></li>
+                        <li><a href="{{ route('cbscprogram') }}">CBSC Program</a></li>
+                        <li><a href="{{ route('ictfacility') }}">ICT Facility</a></li>
                         <li><a href="{{ route('student-corner') }}">Student Corner</a></li>
                     </ul>
                 </li>
@@ -337,4 +337,4 @@
         <!--//navabr-collapse-->
     </div>
     <!--//container-->
-</nav>
+</nav>              
