@@ -337,7 +337,7 @@ class HomeController extends Controller
     public function classRoom(){
 
         $imageFolder = public_path('uploads/uploads/photo-gallery/class_room');
-        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE); 
+        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE);
         $imageFileNames = array_map('basename', $imageFiles);
         return view('home.about.naac.classroom ', compact('imageFileNames'));
     }
@@ -349,10 +349,10 @@ class HomeController extends Controller
     }
     public function ictFacility(){
         $imageFolder = public_path('uploads/uploads/photo-gallery/ict');
-        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE); 
+        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE);
         $imageFileNames = array_map('basename', $imageFiles);
         return view('home.about.naac.ictfacility', compact('imageFileNames'));
-        
+
     }
 
     //About Section
@@ -646,6 +646,17 @@ class HomeController extends Controller
     }
 
     public function student_corner(){
-        return view('home.student.student_corner');
+
+        $imageFolder = public_path('uploads/uploads/photo-gallery/book');
+        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE);
+        $imageFileNames = array_map('basename', $imageFiles);
+        $imageFolderict = public_path('uploads/uploads/photo-gallery/ictroom');
+        $imageFilesict = glob($imageFolderict . '/*.{jpg,png}', GLOB_BRACE);
+        $imageictFileNames = array_map('basename', $imageFilesict);
+
+        $imageFolderspt = public_path('uploads/uploads/photo-gallery/sports');
+        $imageFilesspt = glob($imageFolderspt . '/*.{jpg,png}', GLOB_BRACE);
+        $imagesptFileNames = array_map('basename', $imageFilesspt);
+        return view('home.student.student_corner',compact('imageFileNames','imageictFileNames','imagesptFileNames'));
     }
 }
