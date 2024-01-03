@@ -13,6 +13,9 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\SessionWiseController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\DepartmentController;
+use App\Http\Controllers\Admin\FacultyController;
+use App\Http\Controllers\Admin\SubDepartmentController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -223,6 +226,9 @@ Route::get('computer-details',[HomeController::class,'computerDetails'])->name('
 Route::get('cbsc-program',[HomeController::class,'cbscProgram'])->name('cbscprogram');
 Route::get('ict-facility',[HomeController::class,'ictFacility'])->name('ictfacility');
 
+//Faculty Route
+Route::get('all-faculty',[Homecontroller::class,'allFaculty'])->name('all_faculty');
+
 
 
 // Backend Routes
@@ -251,6 +257,10 @@ Route::group(['prefix'=>'admin','as'=>'admin.', 'middleware' => 'auth'],function
     Route::resource('/criteria', CriteriaController::class);
     Route::resource('/banner', BannerController::class);
     Route::resource('/sessionwise', SessionWiseController::class);
+    Route::resource('department',DepartmentController::class);
+    Route::resource('subdepartment',SubDepartmentController::class);
+    Route::resource('faculty',FacultyController::class);
+    Route::get('sub-faculty/{id}',[FacultyController::class,'subDepartment'])->name('add_faculty');
 
 
 });

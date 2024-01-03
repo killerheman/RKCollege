@@ -222,8 +222,9 @@
                         data-close-others="false" href="#" accesskey="2">Faculty<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('iqac') }}">Faculty of Commerce</a></li>
-                        <li class="dropdown-submenu">
+                        <li><a href="{{route('all_faculty')}}">All Faculty</a></li>
+                        {{-- <li><a href="{{ route('iqac') }}">Faculty of Commerce</a></li> --}}
+                        {{-- <li class="dropdown-submenu">
                             <a class="trigger" tabindex="-1" href="#">Faculty of Arts<i
                                     class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
@@ -234,8 +235,8 @@
                                 <li><a href="#">Department of Sanskrit</a></li>
                                 <li><a href="#">Department of Urdu</a></li>
                             </ul>
-                        </li>
-                        <li class="dropdown-submenu">
+                        </li> --}}
+                        {{-- <li class="dropdown-submenu">
                             <a class="trigger" tabindex="-1" href="#">Faculty of Social Science<i
                                     class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
@@ -245,8 +246,8 @@
                                 <li><a href="#">Department of Psychology</a></li>
                                 <li><a href="#">Department of Socialogy</a></li>
                             </ul>
-                        </li>
-                        <li><a href="{{ route('aqar') }}">Faculty of Physical Education</a></li>
+                        </li> --}}
+                        {{-- <li><a href="{{ route('aqar') }}">Faculty of Physical Education</a></li> --}}
                     </ul>
                 </li>
 

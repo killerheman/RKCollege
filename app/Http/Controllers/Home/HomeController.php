@@ -7,6 +7,7 @@ use App\Models\Banner;
 use App\Models\Criteria;
 use App\Models\Event;
 use App\Models\EventGallery;
+use App\Models\Faculty;
 use App\Models\SessionWiseModel;
 use App\Models\Notice;
 use Illuminate\Http\Request;
@@ -647,5 +648,10 @@ class HomeController extends Controller
 
     public function student_corner(){
         return view('home.student.student_corner');
+    }
+
+    public function allFaculty(){
+        $faculties = Faculty::all();
+        return view('home.facility.all_faculty',compact('faculties'));
     }
 }
