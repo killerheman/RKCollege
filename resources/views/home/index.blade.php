@@ -120,7 +120,7 @@
             <span>Our Mentors</span>
         </div>
         <div class="row" style="margin-top: 20px;">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
                 <div class="box">
                     <img src="{{ asset('frontend/assets/images/officer/bihar_governor.jpg') }}" style="height: 250px;" >
                     <div class="box-content">
@@ -133,7 +133,7 @@
                     <p class="text-center">Governor</p>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            {{-- <div class="col-md-3 col-sm-6">
                 <div class="box">
                     <img src="{{ asset('frontend/assets/images/officer/cm_bihar.jpg') }}" style="height: 250px;" >
                     <div class="box-content">
@@ -145,8 +145,8 @@
                     <h4>Nitish Kumar</h4>
                     <p class="text-center">Chief Minister</p>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
+            </div> --}}
+            <div class="col-md-4 col-sm-6">
                 <div class="box">
                     <img src="{{ asset('frontend/assets/images/officer/vc.jpeg') }}" style="height: 250px;" >
                     <div class="box-content">
@@ -159,11 +159,11 @@
                     <p class="text-center">Vice-Chancellor</p>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
                 <div class="box">
                     <img src="{{ asset('frontend/assets/images/officer/principal.jpg') }}" style="height: 250px;" >
                     <div class="box-content">
-                        <h3 class="title">Arvind Kumar Malan</h3>
+                        <h3 class="title">Arvind Kumar Mandal</h3>
                         <span class="post">Principal</span>
                     </div>
                 </div>
