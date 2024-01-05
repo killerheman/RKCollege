@@ -64,7 +64,16 @@
                         data-close-others="false" href="#" accesskey="3">Academics<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{route('admission')}}">Admission</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="trigger" tabindex="-1" href="#">Admission<i
+                                    class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" target="_blank">UG Admission</a></li>
+                                <li><a href="https://govexams.com/lnmu_pg/default.aspx"  target="_blank">PG  Admission</a></li>
+                            </ul>
+                        </li>
+                            {{--  <a href="{{route('admission')}}">Admission</a>  --}}
+                           
                         <li><a href="{{route('activity')}}">Academic Activities</a></li>
                         <li><a href="{{route('curriculum')}}">Academic Curriculum</a></li>
                         <li><a href="{{route('enhancementProgram')}}">Capability & Efficiency Enhancement Programs</a></li>
