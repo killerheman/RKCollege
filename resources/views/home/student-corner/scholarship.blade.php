@@ -13,9 +13,9 @@
             <div class="row page-row mb-5">
 
                 <ol>
-                    <li>1.	Stipend for SC/ST/OBC/Minorities/Physically Handicapped by Govt. of Bihar.</li>
-                    <li>2.	Merit Scholarship by Govt. of Bihar</li>
-                    <li>3.	UGC Sponsored Scholarship.</li>
+                    <li>Stipend for SC/ST/OBC/Minorities/Physically Handicapped by Govt. of Bihar.</li>
+                    <li>Merit Scholarship by Govt. of Bihar</li>
+                    <li>UGC Sponsored Scholarship.</li>
                     </ol>
             </div>
             <!--//page-row-->
