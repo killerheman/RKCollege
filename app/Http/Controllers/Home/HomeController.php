@@ -659,4 +659,30 @@ class HomeController extends Controller
         $imagesptFileNames = array_map('basename', $imageFilesspt);
         return view('home.student.naac_more',compact('imageFileNames','imageictFileNames','imagesptFileNames'));
     }
+
+    // Student Corner
+    public function alumni()
+    {
+        return view('home.student-corner.alumni');
+    }
+
+    public function scholarship()
+    {
+        return view('home.student-corner.scholarship');
+    }
+
+    public function meritList()
+    {
+        return view('home.student-corner.merit_list');
+    }
+
+    public function intermediateRegistration()
+    {
+        return view('home.student-corner.intermediate_registration');
+    }
+
+    public function electoralRoll()
+    {
+        return view('home.student-corner.electoral_roll');
+    }
 }

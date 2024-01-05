@@ -230,6 +230,13 @@ Route::get('ict-facility',[HomeController::class,'ictFacility'])->name('ictfacil
 Route::get('all-faculty',[Homecontroller::class,'allFaculty'])->name('all_faculty');
 
 
+//Student Corner Routes
+Route::get('alumni',[Homecontroller::class,'alumni'])->name('alumni');
+Route::get('scholarship',[Homecontroller::class,'scholarship'])->name('scholarship');
+Route::get('merit-list',[Homecontroller::class,'meritList'])->name('meritList');
+Route::get('intermediate-registartion',[Homecontroller::class,'intermediateRegistration'])->name('intermediateRegistration');
+Route::get('electoral-roll',[Homecontroller::class,'electoralRoll'])->name('electoralRoll');
+
 
 // Backend Routes
 Route::get('/admin',[LoginController::class, 'index'])->name('admin');

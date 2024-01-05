@@ -20,6 +20,7 @@
                         data-close-others="false" href="#" accesskey="2">About<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
+                        <li><a href="{{ route('principalDesk')}}">Principal Desk</a></li>
                         <li><a href="{{ route('isoCertified')}}">ISO Certified</a></li>
                         <li><a href="{{route('CollegeHistory')}}">History</a></li>
                         <li><a href="{{route('missionVission')}}">Mission & Vision</a></li>
@@ -33,7 +34,7 @@
                             <ul class="dropdown-menu">
                                 <li><a tabindex="-1" href="{{route('lab')}}">Labs</a>
                                 </li>
-                                <li><a href="{{route('auditoirum')}}">Late P.N. Singh Memorial Auditorium</a></li>
+                                <li><a href="{{route('auditoirum')}}">Auditorium</a></li>
                                 <li><a href="{{route('conferenceHall')}}">Conference/Seminar Hall</a></li>
                                 <li><a href="{{route('indoorStadium')}}">Indoor Stadium</a></li>
                                 <li><a href="{{route('mediaCenter')}}">Media Center</a></li>
@@ -340,11 +341,22 @@
                     </ul>
                 </li>
                 <li class="nav-item"><a href="{{ route('nirf') }}" >NIRF</a></li>
-                <li class="nav-item"><a href="#" >Alumni</a></li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
+                        data-close-others="false" href="#" accesskey="2">Student Corner<i
+                            class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{route('alumni')}}">Alumni</a></li>
+                        <li><a href="{{route('scholarship')}}">Scholarship</a></li>
+                        <li><a href="{{route('meritList')}}">Merit List</a></li>
+                        <li><a href="{{route('intermediateRegistration')}}">Intermediate registration</a></li>
+                        <li><a href="{{route('electoralRoll')}}">Electoral Roll</a></li>
+                    </ul>
+                </li>
             </ul>
             <!--//nav-->
         </div>
         <!--//navabr-collapse-->
     </div>
     <!--//container-->
-</nav>              
+</nav>
