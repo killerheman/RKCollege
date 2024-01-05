@@ -294,7 +294,7 @@
                         <li><a href="{{ route('computerdetails') }}">Computer Details</a></li>
                         <li><a href="{{ route('cbscprogram') }}">CBSC Program</a></li>
                         <li><a href="{{ route('ictfacility') }}">ICT Facility</a></li>
-                        <li><a href="{{ route('student-corner') }}">Student Corner</a></li>
+                        <li><a href="{{ route('naac-more') }}">More... </a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">

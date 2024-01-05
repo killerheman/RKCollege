@@ -5,7 +5,7 @@
 
         <header class="page-heading clearfix">
             <div class="text-effect" data-content="About College">
-                <span>Student Corner</span>
+                <span>Naac More </span>
             </div>
             <!--//breadcrumbs-->
         </header>

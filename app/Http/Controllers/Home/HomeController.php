@@ -7,7 +7,6 @@ use App\Models\Banner;
 use App\Models\Criteria;
 use App\Models\Event;
 use App\Models\EventGallery;
-use App\Models\Faculty;
 use App\Models\SessionWiseModel;
 use App\Models\Notice;
 use Illuminate\Http\Request;
@@ -646,7 +645,7 @@ class HomeController extends Controller
         return view('home.activities.departmental.socialogy.student_forum');
     }
 
-    public function student_corner(){
+    public function naac_more(){
 
         $imageFolder = public_path('uploads/uploads/photo-gallery/book');
         $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE);
@@ -655,14 +654,9 @@ class HomeController extends Controller
         $imageFilesict = glob($imageFolderict . '/*.{jpg,png}', GLOB_BRACE);
         $imageictFileNames = array_map('basename', $imageFilesict);
 
-        $imageFolderspt = public_path('uploads/uploads/photo-gallery/sports');
+        $imageFolderspt = public_path('uploads/uploads/photo-gallery/');
         $imageFilesspt = glob($imageFolderspt . '/*.{jpg,png}', GLOB_BRACE);
         $imagesptFileNames = array_map('basename', $imageFilesspt);
-        return view('home.student.student_corner',compact('imageFileNames','imageictFileNames','imagesptFileNames'));
-    }
-
-    public function allFaculty(){
-        $faculties = Faculty::all();
-        return view('home.facility.all_faculty',compact('faculties'));
+        return view('home.student.naac_more',compact('imageFileNames','imageictFileNames','imagesptFileNames'));
     }
 }

@@ -161,14 +161,14 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="box">
-                    <img src="{{ asset('frontend/assets/images/officer/principal.jpg') }}" style="height: 250px;" >
+                    <img src="{{ asset('frontend/assets/images/officer/anil_kumar.jpg') }}" style="height: 250px;" >
                     <div class="box-content">
-                        <h3 class="title">Arvind Kumar Mandal</h3>
+                        <h3 class="title">Anil Kumar Mandal</h3>
                         <span class="post">Principal</span>
                     </div>
                 </div>
                 <div class="text-center fw-bold" style="background-color: #f19833; color: whitesmoke;">
-                    <h4>Arvind Kumar Mandal</h4>
+                    <h4>Anil Kumar Mandal</h4>
                     <p class="text-center">Principal</p>
                 </div>
             </div>
