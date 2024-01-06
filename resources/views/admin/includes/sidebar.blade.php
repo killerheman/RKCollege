@@ -108,6 +108,29 @@
                     </div>
                 </li>
                 @endcan
+                {{-- @can('department') --}}
+                <!-- Event Menu -->
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarDashboards3" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i data-feather="lock" class="icon-dual"></i> <span data-key="t-dashboards">Faculty</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarDashboards3">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{ route('admin.department.index') }}"  class="nav-link" data-key="t-analytics">Add Department</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('admin.subdepartment.index') }}"  class="nav-link" data-key="t-analytics">Add Subject</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('admin.faculty.index') }}"  class="nav-link" data-key="t-analytics">Add Faculty</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                {{-- @endcan --}}
 
             </ul>
         </div>

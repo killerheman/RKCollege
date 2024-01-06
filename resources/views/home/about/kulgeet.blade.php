@@ -11,7 +11,9 @@
         </header>
         <div class="page-content">
             <div class="row page-row mb-5">
-               <h4 class="text-center mt-5">Content to be uploaded soon...</h4>
+                <div class="col-md-12 text-center" >
+                    <img class="size-medium wp-image-4769 aligncenter" src="{{ asset('college-map/kulgeet.jpg') }}">
+                </div>
                 <!--//page-content-->
             </div>
             <!--//page-row-->

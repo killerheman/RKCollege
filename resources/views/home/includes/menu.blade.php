@@ -20,6 +20,7 @@
                         data-close-others="false" href="#" accesskey="2">About<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
+                        <li><a href="{{ route('principalDesk')}}">Principal Desk</a></li>
                         <li><a href="{{ route('isoCertified')}}">ISO Certified</a></li>
                         <li><a href="{{route('CollegeHistory')}}">History</a></li>
                         <li><a href="{{route('missionVission')}}">Mission & Vision</a></li>
@@ -33,7 +34,7 @@
                             <ul class="dropdown-menu">
                                 <li><a tabindex="-1" href="{{route('lab')}}">Labs</a>
                                 </li>
-                                <li><a href="{{route('auditoirum')}}">Late P.N. Singh Memorial Auditorium</a></li>
+                                <li><a href="{{route('auditoirum')}}">Auditorium</a></li>
                                 <li><a href="{{route('conferenceHall')}}">Conference/Seminar Hall</a></li>
                                 <li><a href="{{route('indoorStadium')}}">Indoor Stadium</a></li>
                                 <li><a href="{{route('mediaCenter')}}">Media Center</a></li>
@@ -64,7 +65,16 @@
                         data-close-others="false" href="#" accesskey="3">Academics<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{route('admission')}}">Admission</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="trigger" tabindex="-1" href="#">Admission<i
+                                    class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" target="_blank">UG Admission</a></li>
+                                <li><a href="https://govexams.com/lnmu_pg/default.aspx"  target="_blank">PG  Admission</a></li>
+                            </ul>
+                        </li>
+                            {{--  <a href="{{route('admission')}}">Admission</a>  --}}
+
                         <li><a href="{{route('activity')}}">Academic Activities</a></li>
                         <li><a href="{{route('curriculum')}}">Academic Curriculum</a></li>
                         <li><a href="{{route('enhancementProgram')}}">Capability & Efficiency Enhancement Programs</a></li>
@@ -82,8 +92,11 @@
                         data-close-others="false" href="#" accesskey="4">Courses<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('vedicMathematics') }}">Vedic Mathematics</a>
-                        </li>
+                        <li><a href="{{ route('coursesOffered') }}">Courses offered</a></li>
+                        <li><a href="{{ route('specialCourses') }}">Special courses</a></li>
+                        <li><a href="{{ route('bedCourses') }}">B.Ed Course</a></li>
+                        <li><a href="{{ route('bbaBcaCourses') }}">BBA & BCA</a></li>
+                        {{-- <li><a href="{{ route('vedicMathematics') }}">Vedic Mathematics</a></li>
                         <li><a href="{{ route('skillDevelopmentProgram') }}">Entrepreneurship & Skill Development Program</a></li>
                         <li><a href="{{ route('yogaPhilosophy') }}">Yoga Philosophy</a></li>
                         <li><a href="{{ route('indology') }}">Indology</a></li>
@@ -93,7 +106,7 @@
                         <li><a href="{{ route('entrepreneurship') }}">Entrepreneurship</a></li>
                         <li><a href="{{ route('recordDocument') }}">Record & Document Management</a></li>
                         <li><a href="{{ route('emotionalIntelligence') }}">Emotional Intelligence</a></li>
-                        <li><a href="{{ route('massMedia') }}">Mass Media</a></li>
+                        <li><a href="{{ route('massMedia') }}">Mass Media</a></li> --}}
 
                     </ul>
                 </li>
@@ -222,8 +235,9 @@
                         data-close-others="false" href="#" accesskey="2">Faculty<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('iqac') }}">Faculty of Commerce</a></li>
-                        <li class="dropdown-submenu">
+                        <li><a href="{{route('all_faculty')}}">All Faculty</a></li>
+                        {{-- <li><a href="{{ route('iqac') }}">Faculty of Commerce</a></li> --}}
+                        {{-- <li class="dropdown-submenu">
                             <a class="trigger" tabindex="-1" href="#">Faculty of Arts<i
                                     class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
@@ -234,8 +248,8 @@
                                 <li><a href="#">Department of Sanskrit</a></li>
                                 <li><a href="#">Department of Urdu</a></li>
                             </ul>
-                        </li>
-                        <li class="dropdown-submenu">
+                        </li> --}}
+                        {{-- <li class="dropdown-submenu">
                             <a class="trigger" tabindex="-1" href="#">Faculty of Social Science<i
                                     class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
@@ -245,8 +259,8 @@
                                 <li><a href="#">Department of Psychology</a></li>
                                 <li><a href="#">Department of Socialogy</a></li>
                             </ul>
-                        </li>
-                        <li><a href="{{ route('aqar') }}">Faculty of Physical Education</a></li>
+                        </li> --}}
+                        {{-- <li><a href="{{ route('aqar') }}">Faculty of Physical Education</a></li> --}}
                     </ul>
                 </li>
 
@@ -293,7 +307,7 @@
                         <li><a href="{{ route('computerdetails') }}">Computer Details</a></li>
                         <li><a href="{{ route('cbscprogram') }}">CBSC Program</a></li>
                         <li><a href="{{ route('ictfacility') }}">ICT Facility</a></li>
-                        <li><a href="{{ route('student-corner') }}">Student Corner</a></li>
+                        <li><a href="{{ route('naac-more') }}">More... </a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -330,11 +344,22 @@
                     </ul>
                 </li>
                 <li class="nav-item"><a href="{{ route('nirf') }}" >NIRF</a></li>
-                <li class="nav-item"><a href="#" >Alumni</a></li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
+                        data-close-others="false" href="#" accesskey="2">Student Corner<i
+                            class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{route('alumni')}}">Alumni</a></li>
+                        <li><a href="{{route('scholarship')}}">Scholarship</a></li>
+                        <li><a href="{{route('meritList')}}">Merit List</a></li>
+                        <li><a href="{{route('intermediateRegistration')}}">Intermediate registration</a></li>
+                        <li><a href="{{route('electoralRoll')}}">Electoral Roll</a></li>
+                    </ul>
+                </li>
             </ul>
             <!--//nav-->
         </div>
         <!--//navabr-collapse-->
     </div>
     <!--//container-->
-</nav>              
+</nav>

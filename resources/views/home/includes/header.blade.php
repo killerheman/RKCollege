@@ -26,17 +26,17 @@
             <h5 class="" style="font-weight: bold; text-align: center;"> ( A Post Graduate Constituent Unit of
                 <a href="http://lnmu.ac.in/" style="color: #7C0000;">Lalit Narayana Mithila University,Darbhanga</a> )
             </h5>
-            <h5 class="" style="font-weight: bold; text-align: center;"> ( Accredited with 'B++' Grade by NAAC )</h5>
+            <h5 class="" style="font-weight: bold; text-align: center;"> ( NAAC Re-Accredited with 'B' Grade by NAAC )</h5>
         </div>
         <!--//logo-->
-        <div class="info col-md-2 col-sm-2">
+        {{-- <div class="info col-md-2 col-sm-2">
             <div class="pull-right"><br />
                 <a href="#">
                     <img src="{{ asset('frontend/assets/images/icon/naac_grade_lnmu.png') }}" alt="NAAC Grade"
                         class="img-responsive" width="100" />
                 </a>
             </div>
-        </div>
+        </div> --}}
         <!--//info-->
     </div>
     <!--//header-main-->

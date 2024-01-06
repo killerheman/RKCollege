@@ -13,6 +13,9 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\SessionWiseController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\DepartmentController;
+use App\Http\Controllers\Admin\FacultyController;
+use App\Http\Controllers\Admin\SubDepartmentController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -185,7 +188,7 @@ Route::get('/medical-facilities', [HomeController::class, 'medicalFacilites'])->
 Route::get('/college-infrastructure', [HomeController::class, 'collegeInfrastructure'])->name('collegeInfrastructure');
 
 //Student Corners Menu
-Route::get('/student-corner',[HomeController::class,'student_corner'])->name('student-corner');
+Route::get('/naac-more',[HomeController::class,'naac_more'])->name('naac-more');
 Route::get('/result', [HomeController::class, 'result'])->name('result');
 Route::get('/examination-datesheet', [HomeController::class, 'examinationDatesheet'])->name('examinationDatesheet');
 Route::get('/examination-form', [HomeController::class, 'examinationForm'])->name('examinationForm');
@@ -234,6 +237,27 @@ Route::get('computer-details',[HomeController::class,'computerDetails'])->name('
 Route::get('cbsc-program',[HomeController::class,'cbscProgram'])->name('cbscprogram');
 Route::get('ict-facility',[HomeController::class,'ictFacility'])->name('ictfacility');
 
+//Faculty Route
+Route::get('all-faculty',[Homecontroller::class,'allFaculty'])->name('all_faculty');
+
+
+//Student Corner Routes
+Route::get('alumni',[Homecontroller::class,'alumni'])->name('alumni');
+Route::get('scholarship',[Homecontroller::class,'scholarship'])->name('scholarship');
+Route::get('merit-list',[Homecontroller::class,'meritList'])->name('meritList');
+Route::get('intermediate-registartion',[Homecontroller::class,'intermediateRegistration'])->name('intermediateRegistration');
+Route::get('electoral-roll',[Homecontroller::class,'electoralRoll'])->name('electoralRoll');
+
+
+//Courses
+Route::get('/courses-offered', [HomeController::class, 'coursesOffered'])->name('coursesOffered');
+Route::get('/special-courses', [HomeController::class, 'specialCourses'])->name('specialCourses');
+Route::get('/bed-courses', [HomeController::class, 'bedCourses'])->name('bedCourses');
+Route::get('/bba-bca-courses', [HomeController::class, 'bbaBcaCourses'])->name('bbaBcaCourses');
+
+
+
+
 
 
 // Backend Routes
@@ -262,6 +286,10 @@ Route::group(['prefix'=>'admin','as'=>'admin.', 'middleware' => 'auth'],function
     Route::resource('/criteria', CriteriaController::class);
     Route::resource('/banner', BannerController::class);
     Route::resource('/sessionwise', SessionWiseController::class);
+    Route::resource('department',DepartmentController::class);
+    Route::resource('subdepartment',SubDepartmentController::class);
+    Route::resource('faculty',FacultyController::class);
+    Route::get('sub-faculty/{id}',[FacultyController::class,'subDepartment'])->name('add_faculty');
 
 
 
