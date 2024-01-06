@@ -101,12 +101,6 @@
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="NIRF">
-                <span>NIRF</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="row page-row">
 
