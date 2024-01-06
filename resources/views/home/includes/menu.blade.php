@@ -74,7 +74,7 @@
                             </ul>
                         </li>
                             {{--  <a href="{{route('admission')}}">Admission</a>  --}}
-                           
+
                         <li><a href="{{route('activity')}}">Academic Activities</a></li>
                         <li><a href="{{route('curriculum')}}">Academic Curriculum</a></li>
                         <li><a href="{{route('enhancementProgram')}}">Capability & Efficiency Enhancement Programs</a></li>
@@ -92,8 +92,11 @@
                         data-close-others="false" href="#" accesskey="4">Courses<i
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('vedicMathematics') }}">Vedic Mathematics</a>
-                        </li>
+                        <li><a href="{{ route('coursesOffered') }}">Courses offered</a></li>
+                        <li><a href="{{ route('specialCourses') }}">Special courses</a></li>
+                        <li><a href="{{ route('bedCourses') }}">B.Ed Course</a></li>
+                        <li><a href="{{ route('bbaBcaCourses') }}">BBA & BCA</a></li>
+                        {{-- <li><a href="{{ route('vedicMathematics') }}">Vedic Mathematics</a></li>
                         <li><a href="{{ route('skillDevelopmentProgram') }}">Entrepreneurship & Skill Development Program</a></li>
                         <li><a href="{{ route('yogaPhilosophy') }}">Yoga Philosophy</a></li>
                         <li><a href="{{ route('indology') }}">Indology</a></li>
@@ -103,7 +106,7 @@
                         <li><a href="{{ route('entrepreneurship') }}">Entrepreneurship</a></li>
                         <li><a href="{{ route('recordDocument') }}">Record & Document Management</a></li>
                         <li><a href="{{ route('emotionalIntelligence') }}">Emotional Intelligence</a></li>
-                        <li><a href="{{ route('massMedia') }}">Mass Media</a></li>
+                        <li><a href="{{ route('massMedia') }}">Mass Media</a></li> --}}
 
                     </ul>
                 </li>

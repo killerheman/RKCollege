@@ -685,4 +685,26 @@ class HomeController extends Controller
     {
         return view('home.student-corner.electoral_roll');
     }
+
+    //Courses
+    public function coursesOffered()
+    {
+        return view('home.courses.course_offered');
+    }
+
+    public function specialCourses()
+    {
+        return view('home.courses.special_courses');
+    }
+
+    public function bedCourses()
+    {
+        return view('home.courses.bed_courses');
+    }
+
+    public function bbaBcaCourses()
+    {
+        return view('home.courses.bba_bca_courses');
+    }
+
 }

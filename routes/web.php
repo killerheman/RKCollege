@@ -238,6 +238,17 @@ Route::get('intermediate-registartion',[Homecontroller::class,'intermediateRegis
 Route::get('electoral-roll',[Homecontroller::class,'electoralRoll'])->name('electoralRoll');
 
 
+//Courses
+Route::get('/courses-offered', [HomeController::class, 'coursesOffered'])->name('coursesOffered');
+Route::get('/special-courses', [HomeController::class, 'specialCourses'])->name('specialCourses');
+Route::get('/bed-courses', [HomeController::class, 'bedCourses'])->name('bedCourses');
+Route::get('/bba-bca-courses', [HomeController::class, 'bbaBcaCourses'])->name('bbaBcaCourses');
+
+
+
+
+
+
 // Backend Routes
 Route::get('/admin',[LoginController::class, 'index'])->name('admin');
 Route::post('/login',[LoginController::class, 'store'])->name('login');

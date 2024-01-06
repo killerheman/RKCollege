@@ -3100,3 +3100,9 @@ ul.custom-list-style li {
     text-indent: 0;
   }
 }
+
+thead{
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
