@@ -47,11 +47,11 @@ Route::get('/facilities', [HomeController::class, 'facilities'])->name('faciliti
 Route::get('/about-us', [HomeController::class, 'about'])->name('about');
 Route::get('/iso-certified', [HomeController::class, 'isoCertified'])->name('isoCertified');
 Route::get('/college-history', [HomeController::class, 'CollegeHistory'])->name('CollegeHistory');
-Route::get('/mission-vision', [HomeController::class, 'missionVission'])->name('missionVission');
+Route::get('/vision-mission', [HomeController::class, 'missionVision'])->name('missionVision');
 Route::get('/kulgeet', [HomeController::class, 'kulgeet'])->name('kulgeet');
 Route::get('/mou', [HomeController::class, 'mou'])->name('mou');
 Route::get('/naac', [HomeController::class, 'naac'])->name('naac');
-Route::get('/instituation-practice', [HomeController::class, 'practice'])->name('practice');
+Route::get('/institution-practice', [HomeController::class, 'practice'])->name('practice');
 Route::get('/lab', [HomeController::class, 'lab'])->name('lab');
 Route::get('/auditoirum', [HomeController::class, 'auditoirum'])->name('auditoirum');
 Route::get('/conference-hall', [HomeController::class, 'conferenceHall'])->name('conferenceHall');

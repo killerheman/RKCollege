@@ -3,12 +3,6 @@
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="BBA & BCA Courses">
-                <span>BBA & BCA Courses</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="vc_column-inner ">
                 <div class="wpb_wrapper">

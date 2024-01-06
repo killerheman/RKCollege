@@ -1,14 +1,8 @@
-@extends('home.includes.layout', ['title' => 'Intemediate-Registration'])
+@extends('home.includes.layout', ['title' => 'Intermediate Registration'])
 
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="Intemediate Registration">
-                <span>Intemediate Registration</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="row page-row mb-5">
 

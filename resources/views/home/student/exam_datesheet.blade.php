@@ -3,12 +3,6 @@
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="Examination Datesheet">
-                <span>Examination Datesheet</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="row page-row">
                 <article class="content-wrapper col-md-10 col-sm-8">

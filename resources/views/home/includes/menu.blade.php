@@ -23,7 +23,7 @@
                         <li><a href="{{ route('principalDesk')}}">Principal Desk</a></li>
                         <li><a href="{{ route('isoCertified')}}">ISO Certified</a></li>
                         <li><a href="{{route('CollegeHistory')}}">History</a></li>
-                        <li><a href="{{route('missionVission')}}">Mission & Vision</a></li>
+                        <li><a href="{{route('missionVision')}}">Mission & Vision</a></li>
                         <li><a href="{{route('kulgeet')}}">Kulgeet</a></li>
                         <li><a href="{{route('mou')}}">MOU</a></li>
                         <li><a href="{{route('naac')}}">Progress according to NAAC</a></li>
@@ -51,10 +51,10 @@
                             class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{route('facilityIncharge')}}">Faculty Incharge</a></li>
-                        <li><a href="{{route('administrativeStructure')}}">Administrative Structure</a></li>
-                        <li><a href="{{route('administrativeSection')}}">Administrative Section</a></li>
+                        <li><a href="{{route('administration')}}">Administrative Structure</a></li>
+                        {{-- <li><a href="{{route('administrativeSection')}}">Administrative Section</a></li> --}}
                         <li><a href="{{route('accountSection')}}">Account Section</a></li>
-                        <li><a href="{{route('laboratory')}}">Laboratory</a></li>
+                        {{-- <li><a href="{{route('laboratory')}}">Laboratory</a></li> --}}
                         <li><a href="{{route('library')}}">Library Section</a></li>
 
                     </ul>
@@ -343,7 +343,7 @@
                         <li><a href="#"> Meeting Minutes</a></li> -->
                     </ul>
                 </li>
-                <li class="nav-item"><a href="{{ route('nirf') }}" >NIRF</a></li>
+                {{-- <li class="nav-item"><a href="{{ route('nirf') }}" >NIRF</a></li> --}}
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
                         data-close-others="false" href="#" accesskey="2">Student Corner<i

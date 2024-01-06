@@ -3,12 +3,6 @@
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="Special Courses">
-                <span>Special Courses</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="wpb_wrapper">
                 <p class="year"><strong>Courses under UGC scheme</strong></p>

@@ -1,14 +1,8 @@
-@extends('home.includes.layout', ['title' => 'About College'])
+@extends('home.includes.layout', ['title' => 'Academic Calendar'])
 
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="About College">
-                <span>Academic Calendar</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="row page-row">
                 <div class="container">
@@ -24,8 +18,8 @@
                                     <h3>Academic Calendar</h3><br>
                                            <a href="{{ asset('calendar/ACADEMIC-CALENDER.docx') }}" class="button" download><i class="fa fa-download"></i>Download Calendar</a>
                                         </div>
-                                
-                                
+
+
                             </div>
                         </div>
                     </div>

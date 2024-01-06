@@ -3,12 +3,6 @@
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="B.Ed Courses">
-                <span>B.Ed Courses</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
                 <p style="text-align: center;"><strong>B.Ed. (Regular Course (Secondary School Level)<br>
                         Recognized by NCTEBhuwaneshwar, Affiliated in L.N.M.U., Darbhanga</strong></p>

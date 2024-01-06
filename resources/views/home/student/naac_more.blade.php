@@ -1,14 +1,8 @@
-@extends('home.includes.layout', ['title' => 'About College'])
+@extends('home.includes.layout', ['title' => 'Naac'])
 
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="About College">
-                <span>Naac More </span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
 
                     <div class="vertical-tab mb-2" role="tabpanel">

@@ -4,12 +4,6 @@
 @section('content')
     <div class="page-wrapper" style="margin-bottom: 50px;">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="Events">
-                <span>Events</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="page-row">
                 <p></p>

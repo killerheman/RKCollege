@@ -1,15 +1,9 @@
-@extends('home.includes.layout', ['title' => 'About College'])
+@extends('home.includes.layout', ['title' => 'Infrastructure & facility'])
 
 @section('content')
 
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="About College">
-                <span>Infrastructure & facility</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="row page-row">
                 <table class="table table-striped" border="1" width="100%" style="color:maroon;">

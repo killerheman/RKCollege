@@ -1,14 +1,8 @@
-@extends('home.includes.layout', ['title' => 'About College'])
+@extends('home.includes.layout', ['title' => 'Result'])
 
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="About College">
-                <span>About College</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="row page-row">
                 @include('home.sidebar.about', ['active' => 1])

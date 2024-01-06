@@ -1,14 +1,8 @@
-@extends('home.includes.layout', ['title' => 'About College'])
+@extends('home.includes.layout', ['title' => 'B.Ed Gallery'])
 
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="About College">
-                <span>B.ed Gallery</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="row page-row">
 
@@ -23,10 +17,10 @@
   <a href="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/Tulips.jpg"><img src="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/tn/Tulips.jpg" alt="Yellow tulips"></a>
 </div>
 
-         
-                
-               
-                    
+
+
+
+
 
             </div>
             <!--//page-row-->
@@ -35,7 +29,7 @@
     </div>
         <!-- Below we include the jQuery Library -->
 
-  
+
 @endsection
 @section('scriptarea')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -52,5 +46,5 @@ $(document).ready(function() {
   // start fancybox:
   $(".gallery a").fancybox();
   });
-  </script> 
+  </script>
 @endsection

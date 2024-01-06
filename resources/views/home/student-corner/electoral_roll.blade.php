@@ -1,14 +1,8 @@
-@extends('home.includes.layout', ['title' => 'Electoral-Roll'])
+@extends('home.includes.layout', ['title' => 'Electoral Roll'])
 
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="Electoral Roll">
-                <span>Electoral Roll</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="row page-row mb-5">
 

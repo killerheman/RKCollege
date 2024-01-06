@@ -1,21 +1,16 @@
-@extends('home.includes.layout', ['title' => 'About College'])
+@extends('home.includes.layout', ['title' => 'Institution Best Practice'])
 
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="About College">
-                <span>Instituation Best Practice</span>
+        <div class="page-content" >
+            <div class="row page-row">
+                <iframe src="{{ asset('uploads/uploads/2023/07/BEST-PRATICE-2020-21.pdf') }}" width="100%" height="600px"></iframe>
+                <iframe src="{{ asset('/uploads/uploads/2023/07/Institutional-two-best-Pratices-2016-17-1.pdf') }}" width="100%" height="600px"></iframe>
+
             </div>
-            <!--//breadcrumbs-->
-        </header>
-        <div class="page-content">
-            <div class="row page-row mb-5">
-               <h4 class="text-center mt-5">Content to be uploaded soon...</h4>
-                <!--//page-content-->
-            </div>
-            <!--//page-row-->
         </div>
-        <!--//page-content-->
     </div>
+
+
 @endsection

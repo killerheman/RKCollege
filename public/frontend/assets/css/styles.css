@@ -891,7 +891,7 @@ ul.custom-list-style li {
 
 .main-nav {
     background: #800000;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .main-nav button {
@@ -3105,4 +3105,31 @@ thead{
     background-color: #800000;
     color: white;
     font-weight: bold;
+}
+
+
+
+.text-effect3{
+    color: #fff;
+    font-family: 'Londrina Outline', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 0 5px #800000, 0 0 10px #800000, 0 0 20px #800000, 0 0 40px #800000,
+                0 0 80px #800000, 0 0 100px #800000, 0 0 120px #800000;
+    animation: blink 8s infinite linear alternate;
+}
+@keyframes blink{
+    60%, 70%, 79% { opacity: 1; }
+    65%, 67%, 76%, 78% { opacity: 0.2; }
+    66%, 69%, 77% { opacity: 0.8; }
+}
+@media only screen and (max-width: 990px){
+    .text-effect3{ font-size: 80px; }
+}
+@media only screen and (max-width: 767px){
+    .text-effect3{ font-size: 60px; }
+}
+@media only screen and (max-width: 576px){
+    .text-effect3{ font-size: 45px; }
 }

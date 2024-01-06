@@ -1,27 +1,22 @@
-@extends('home.includes.layout', ['title' => 'About College'])
+@extends('home.includes.layout', ['title' => 'NAAC'])
 
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="About College">
-                <span>Accreditation</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
+
         <div class="page-content" >
             <div class="row page-row">
                 <div class="gallery">
-                    
+
                     <a href="{{ asset('/uploads/uploads/2018/02/NAAC2-001-min.jpg') }}"><img src="{{ asset('/uploads/uploads/2018/02/NAAC2-001-min.jpg') }}" alt="image"> </a>
-                   
+
                      <a href="{{ asset('/uploads/uploads/2018/02/NAAC3-001-min.jpg') }}"><img src="{{ asset('/uploads/uploads/2018/02/NAAC3-001-min.jpg') }}" alt="image"> </a>
                   </div>
             </div>
         </div>
     </div>
 
-    
+
 @endsection
 @section('scriptarea')
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -38,5 +33,5 @@ $(document).ready(function() {
   // start fancybox:
   $(".gallery a").fancybox();
   });
-  </script> 
+  </script>
 @endsection

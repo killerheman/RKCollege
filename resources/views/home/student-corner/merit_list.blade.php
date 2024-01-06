@@ -1,14 +1,8 @@
-@extends('home.includes.layout', ['title' => 'Merit-List'])
+@extends('home.includes.layout', ['title' => 'Merit List'])
 
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="Merit List">
-                <span>Merit List</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="row page-row mb-5">
 

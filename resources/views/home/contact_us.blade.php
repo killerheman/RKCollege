@@ -3,12 +3,7 @@
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="Contact Us">
-                <span>Contact Us</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
+
         <div class="page-content">
             <div class="row">
                 <article class="contact-form col-md-8 col-sm-7  page-row">

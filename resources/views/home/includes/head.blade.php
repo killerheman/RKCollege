@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Welcome to R.K. College">
-    <meta name="author" content="C.M.College,Darbhanga">
+    <meta name="author" content="R.K.College,Darbhanga">
     <meta name="keywords"
         content="lnmu, lnmu Result, lnmu admission, National, cmcollege, india, best college, national college, bihar lnmu university, lnmucollege, bihar, Result, lnmu result, college result, lnmu, cm-college darbhanga" />
     <link rel="shortcut icon" href="{{ asset('frontend/assets/images/icon/lnmulogo.png')}}">

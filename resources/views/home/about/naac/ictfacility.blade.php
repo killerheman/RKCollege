@@ -3,19 +3,13 @@
 @section('content')
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="About College">
-                <span> ICT FACILITY</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="gallery">
-                
+
                 @foreach($imageFileNames as $fileName)
                 <a href="{{asset('uploads/uploads/photo-gallery/ict/' . $fileName)  }}"><img src="{{ asset('uploads/uploads/photo-gallery/ict/' . $fileName) }}" alt="{{ $fileName }}"></a>
                 @endforeach
-               
+
             </div>
             <!--//page-row-->
         </div>
@@ -37,5 +31,5 @@ $(document).ready(function() {
   // start fancybox:
   $(".gallery a").fancybox();
   });
-  </script> 
+  </script>
 @endsection

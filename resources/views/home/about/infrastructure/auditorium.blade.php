@@ -1,14 +1,10 @@
-@extends('home.includes.layout', ['title' => 'About College'])
+@extends('home.includes.layout', ['title' => 'Auditorium'])
 
 @section('content')
+
+
     <div class="page-wrapper">
 
-        <header class="page-heading clearfix">
-            <div class="text-effect" data-content="About College">
-                <span>Late P.N. Singh Memorial Auditorium</span>
-            </div>
-            <!--//breadcrumbs-->
-        </header>
         <div class="page-content">
             <div class="row page-row mb-5">
                <h4 class="text-center mt-5">Content to be uploaded soon...</h4>

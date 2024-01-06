@@ -7,6 +7,7 @@ use App\Models\Banner;
 use App\Models\Criteria;
 use App\Models\Event;
 use App\Models\EventGallery;
+use App\Models\Faculty;
 use App\Models\SessionWiseModel;
 use App\Models\Notice;
 use Illuminate\Http\Request;
@@ -365,14 +366,17 @@ class HomeController extends Controller
     {
         return view('home.about.isoCertified');
     }
+
     public function CollegeHistory()
     {
         return view('home.about.history');
     }
-    public function missionVission()
+
+    public function missionVision()
     {
         return view('home.about.vision_mission');
     }
+
     public function kulgeet()
     {
         return view('home.about.kulgeet');
@@ -399,7 +403,10 @@ class HomeController extends Controller
     }
     public function conferenceHall()
     {
-        return view('home.about.infrastructure.conference_hall');
+        $imageFolder = public_path('frontend/assets/images/hall');
+        $imageFiles = glob($imageFolder . '/*.{jpg,png,jpeg}', GLOB_BRACE);
+        $imageFileNames = array_map('basename', $imageFiles);
+        return view('home.about.infrastructure.conference_hall', compact('imageFileNames'));
     }
     public function indoorStadium()
     {
@@ -407,11 +414,17 @@ class HomeController extends Controller
     }
     public function mediaCenter()
     {
-        return view('home.about.infrastructure.mediaCenter');
+        $imageFolder = public_path('frontend/assets/images/newspaper');
+        $imageFiles = glob($imageFolder . '/*.{jpg,png,jpeg}', GLOB_BRACE);
+        $imageFileNames = array_map('basename', $imageFiles);
+        return view('home.about.infrastructure.mediaCenter',compact('imageFileNames'));
     }
     public function smartClasses()
     {
-        return view('home.about.infrastructure.classes');
+        $imageFolder = public_path('frontend/assets/images/classroom');
+        $imageFiles = glob($imageFolder . '/*.{jpg,png,jpeg}', GLOB_BRACE);
+        $imageFileNames = array_map('basename', $imageFiles);
+        return view('home.about.infrastructure.classes', compact('imageFileNames'));
     }
 
     //Administrator
@@ -438,7 +451,10 @@ class HomeController extends Controller
     }
     public function library()
     {
-        return view('home.administrator.library');
+        $imageFolder = public_path('frontend/assets/images/library');
+        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE);
+        $imageFileNames = array_map('basename', $imageFiles);
+        return view('home.administrator.library',compact('imageFileNames'));
     }
 
     //Academics
@@ -546,7 +562,10 @@ class HomeController extends Controller
     }
     public function ncc()
     {
-        return view('home.activities.ncc');
+        $imageFolder = public_path('frontend/assets/images/sports');
+        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE);
+        $imageFileNames = array_map('basename', $imageFiles);
+        return view('home.activities.ncc',compact('imageFileNames'));
     }
 
     //departmental Activities
@@ -730,6 +749,11 @@ class HomeController extends Controller
 
     public function facilities(){
         return view('home.facilities');
+    }
+
+    public function allFaculty(){
+        $faculties = Faculty::get();
+        return view('home.faculty.all_faculty', compact('faculties'));
     }
 
 

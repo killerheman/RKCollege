@@ -5,15 +5,15 @@
                 <div class="footer-col-inner">
                     <h3>About</h3>
                     <ul>
-                        <li><a href="{{ route('about') }}"><i class="fa fa-long-arrow-right"
+                        <li><a href="{{ route('CollegeHistory') }}"><i class="fa fa-long-arrow-right"
                                     aria-hidden="true" style="color:white;"></i>About
                                 us</a></li>
-                        <li><a href="{{ route('missionVission') }}"><i class="fa fa-long-arrow-right" aria-hidden="true"
+                        <li><a href="{{ route('missionVision') }}"><i class="fa fa-long-arrow-right" aria-hidden="true"
                                     style="color:white;"></i>Vision and Mission</a></li>
                         <li><a href="{{ route('principalDesk') }}"><i class="fa fa-long-arrow-right" aria-hidden="true"
                                     style="color:white;"></i>From Principal's Desk</a></li>
-                        <li><a href="{{ route('collegeAchievements') }}"><i class="fa fa-long-arrow-right" aria-hidden="true"
-                                    style="color:white;"></i>Achievements</a></li>
+                        <li><a href="{{ route('kulgeet') }}"><i class="fa fa-long-arrow-right" aria-hidden="true"
+                                    style="color:white;"></i>Kulgeet</a></li>
                     </ul>
                 </div>
                 <!--//footer-col-inner-->
