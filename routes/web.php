@@ -32,6 +32,14 @@ use Illuminate\Support\Facades\Route;
 //Home Menu
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+
+//oldWebsites
+
+Route::get('/from-principal-desk', [HomeController::class, 'principalDesk'])->name('principalDesk');
+Route::get('/college-committee', [HomeController::class, 'collegeCommitte'])->name('collegeCommitte');
+Route::get('/administration', [HomeController::class, 'administration'])->name('administration');
+Route::get('/facilities', [HomeController::class, 'facilities'])->name('facilities');
+
 //About Menu
 Route::get('/about-us', [HomeController::class, 'about'])->name('about');
 Route::get('/iso-certified', [HomeController::class, 'isoCertified'])->name('isoCertified');
@@ -48,7 +56,10 @@ Route::get('/indoor-stadium', [HomeController::class, 'indoorStadium'])->name('i
 Route::get('/media-center', [HomeController::class, 'mediaCenter'])->name('mediaCenter');
 Route::get('/smart-classes', [HomeController::class, 'smartClasses'])->name('smartClasses');
 
-Route::get('/from-principal-desk', [HomeController::class, 'principalDesk'])->name('principalDesk');
+
+
+
+
 Route::get('/college-achievements', [HomeController::class, 'collegeAchievements'])->name('collegeAchievements');
 
 //Administration
@@ -251,6 +262,8 @@ Route::group(['prefix'=>'admin','as'=>'admin.', 'middleware' => 'auth'],function
     Route::resource('/criteria', CriteriaController::class);
     Route::resource('/banner', BannerController::class);
     Route::resource('/sessionwise', SessionWiseController::class);
+
+
 
 
 });

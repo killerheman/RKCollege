@@ -337,7 +337,7 @@ class HomeController extends Controller
     public function classRoom(){
 
         $imageFolder = public_path('uploads/uploads/photo-gallery/class_room');
-        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE); 
+        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE);
         $imageFileNames = array_map('basename', $imageFiles);
         return view('home.about.naac.classroom ', compact('imageFileNames'));
     }
@@ -349,10 +349,10 @@ class HomeController extends Controller
     }
     public function ictFacility(){
         $imageFolder = public_path('uploads/uploads/photo-gallery/ict');
-        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE); 
+        $imageFiles = glob($imageFolder . '/*.{jpg,png}', GLOB_BRACE);
         $imageFileNames = array_map('basename', $imageFiles);
         return view('home.about.naac.ictfacility', compact('imageFileNames'));
-        
+
     }
 
     //About Section
@@ -648,4 +648,29 @@ class HomeController extends Controller
     public function student_corner(){
         return view('home.student.student_corner');
     }
+
+
+
+
+
+
+
+
+    //Old Websites
+
+    public function principalDesk(){
+        return view('home.about.principalDesk');
+    }
+    public function collegeCommitte(){
+        return view('home.about.collegeCommettee');
+    }
+    public function administration(){
+        return view('home.administrator.administration');
+    }
+
+    public function facilities(){
+        return view('home.facilities');
+    }
+
+
 }
