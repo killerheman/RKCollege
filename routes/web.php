@@ -255,6 +255,9 @@ Route::get('/special-courses', [HomeController::class, 'specialCourses'])->name(
 Route::get('/bed-courses', [HomeController::class, 'bedCourses'])->name('bedCourses');
 Route::get('/bba-bca-courses', [HomeController::class, 'bbaBcaCourses'])->name('bbaBcaCourses');
 
+// pdf view
+Route::get('/pdf/{path}/{pdfName}', [HomeController::class,'showPdf'])->name('show-pdf');
+
 
 
 

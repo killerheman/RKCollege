@@ -756,5 +756,22 @@ class HomeController extends Controller
         return view('home.faculty.all_faculty', compact('faculties'));
     }
 
+    // view pdf files
+    public function showPdf($path,$pdfName)
+{
+    // dd($path,$pdfName);
+    $pdfPath = public_path(str_replace('_','/',$path).'/'.$pdfName);
+
+    if (!file_exists($pdfPath)) {
+        abort(404); // Handle missing PDF
+    }
+
+    // Return a response with appropriate headers
+    return response()->file($pdfPath, [
+        'Content-Type' => 'application/pdf',
+        'Content-Disposition' => 'inline; filename="' . $pdfName . '"',
+    ]);
+}
+
 
 }

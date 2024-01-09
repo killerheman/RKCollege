@@ -43,17 +43,7 @@
                                 <li>
                                     <h5 data-fontsize="20" style="--fontSize: 20; line-height: 1.67; --minFontSize: 20;"
                                         data-lineheight="33.4px" class="fusion-responsive-typography-calculated">
-                                        &nbsp;SPARS, Voice of Commerce (Commerce)</h5>
-                                </li>
-                                <li>
-                                    <h5 data-fontsize="20" style="--fontSize: 20; line-height: 1.67; --minFontSize: 20;"
-                                        data-lineheight="33.4px" class="fusion-responsive-typography-calculated">
-                                        &nbsp;Samajiki (Sociology)</h5>
-                                </li>
-                                <li>
-                                    <h5 data-fontsize="20" style="--fontSize: 20; line-height: 1.67; --minFontSize: 20;"
-                                        data-lineheight="33.4px" class="fusion-responsive-typography-calculated">
-                                        &nbsp;Republica (Political Science)</h5>
+                                        &nbsp;Voice of Commerce (Commerce)</h5>
                                 </li>
                                 <li>
                                     <h5 data-fontsize="20" style="--fontSize: 20; line-height: 1.67; --minFontSize: 20;"
@@ -63,17 +53,12 @@
                                 <li>
                                     <h5 data-fontsize="20" style="--fontSize: 20; line-height: 1.67; --minFontSize: 20;"
                                         data-lineheight="33.4px" class="fusion-responsive-typography-calculated">
-                                        &nbsp;Psychogenesis (Psychology)</h5>
+                                        &nbsp;3.	 Republica (Political Science)</h5>
                                 </li>
                                 <li>
                                     <h5 data-fontsize="20" style="--fontSize: 20; line-height: 1.67; --minFontSize: 20;"
                                         data-lineheight="33.4px" class="fusion-responsive-typography-calculated">
                                         &nbsp;Laureates (English)</h5>
-                                </li>
-                                <li>
-                                    <h5 data-fontsize="20" style="--fontSize: 20; line-height: 1.67; --minFontSize: 20;"
-                                        data-lineheight="33.4px" class="fusion-responsive-typography-calculated">
-                                        &nbsp;Sanskriti (AIHC &amp; Archaelogy)</h5>
                                 </li>
                             </ol>
                         </li>
