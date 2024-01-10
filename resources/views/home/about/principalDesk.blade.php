@@ -1,4 +1,4 @@
-@extends('home.includes.layout', ['title' => 'Principals Desk','path'=> asset('frontend/assets/images/slider/banner1.jpg') ])
+@extends('home.includes.layout', ['title' => 'Principals Desk','path'=> asset('frontend/assets/images/slider/breadcrumb_image.jpg') ])
 
 @section('content')
 

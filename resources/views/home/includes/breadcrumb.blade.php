@@ -1,4 +1,4 @@
-<div class="inner-page-banner-area" style="background: url({{ $path ?? asset('frontend/assets/images/slider/banner1.jpg') }}) center/cover no-repeat; margin-bottom:30px;">
+<div class="inner-page-banner-area" style="background: url({{ $path ?? asset('frontend/assets/images/slider/breadcrumb_image.jpg') }}) center/cover no-repeat; margin-bottom:30px; height:50%;">
     <div class="overlay"></div>
     <div class="container breadcrumb-container">
         <div class="pagination-area">

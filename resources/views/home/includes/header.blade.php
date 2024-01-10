@@ -31,14 +31,17 @@
             <h5 class="" style="font-weight: bold; text-align: center;"> ( NAAC Re-Accredited with 'B' Grade by NAAC )</h5>
         </div>
         <!--//logo-->
-        {{-- <div class="info col-md-2 col-sm-2">
+        <div class="info col-md-2 col-sm-2">
             <div class="pull-right"><br />
-                <a href="#">
+                {{-- <a href="#">
                     <img src="{{ asset('frontend/assets/images/icon/naac_grade_lnmu.png') }}" alt="NAAC Grade"
                         class="img-responsive" width="100" />
-                </a>
+                </a> --}}
+                <p class="navbar-right"
+                    style="color: maroon; vertical-align: middle; font-size: 15pt; margin-top: 15px; font-weight: 700; text-align:center;">
+                    {{ \Carbon\Carbon::now()->format('l, F j, Y') }} </p>
             </div>
-        </div> --}}
+        </div>
         <!--//info-->
     </div>
     <!--//header-main-->

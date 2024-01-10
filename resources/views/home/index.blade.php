@@ -104,10 +104,13 @@
                         <li style="text-align: left; margin-bottom:8px;">Admission Notifications</li>
                     </a>
                     <a href="https://lnmu.ac.in/">
-                        <li style="text-align: left;">E-Library</li>
+                        <li style="text-align: left; margin-bottom:8px;">E-Library</li>
                     </a>
                     <a href="https://lnmu.ac.in/">
-                        <li style="text-align: left;">Discipline</li>
+                        <li style="text-align: left; margin-bottom:8px;">Discipline</li>
+                    </a>
+                    <a href="{{route('all-gallery')}}">
+                        <li style="text-align: left; margin-bottom:8px;">Gallery</li>
                     </a>
                 </ul>
             </div>
