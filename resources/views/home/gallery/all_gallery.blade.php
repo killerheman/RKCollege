@@ -8,7 +8,7 @@
 
 <div class="gallery">
   @foreach($imageFileNames as $fileName)
-  <a href="{{asset('frontend/assets/images/gallery/' . $fileName)  }}"><img src="{{ asset('frontend/assets/images/gallery/' . $fileName) }}" alt="{{ $fileName }}"></a>
+  <a href="{{asset('frontend/assets/images/gallery/' . $fileName)  }}"><img src="{{ asset('frontend/assets/images/gallery/' . $fileName) }}" alt="{{ $fileName }}" style="height:200px; width:250px;"></a>
   @endforeach
   </div>
             </div>
