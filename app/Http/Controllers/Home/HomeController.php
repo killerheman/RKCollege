@@ -309,7 +309,10 @@ class HomeController extends Controller
         return view('home.bed.faculty');
     }
     public function gallery(){
-        return view('home.bed.gallery');
+        $imageFolder = public_path('uploads\uploads\photo-gallery\bed_gallery');
+        $imageFiles = glob($imageFolder . '/*.{jpg,png,jpeg}', GLOB_BRACE);
+        $imageFileNames = array_map('basename', $imageFiles);
+        return view('home.bed.gallery', compact('imageFileNames'));
     }
     public function infrastructure(){
         return view('home.bed.infrastructure');
