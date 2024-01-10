@@ -38,7 +38,7 @@
                         class="img-responsive" width="100" />
                 </a> --}}
                 <p class="navbar-right"
-                    style="color: maroon; vertical-align: middle; font-size: 15pt; margin-top: 15px; font-weight: 700; text-align:center;">
+                    style="color: maroon; vertical-align: middle; font-size: 14pt; margin-top: 15px; font-weight: 700; text-align:center;">
                     {{ \Carbon\Carbon::now()->format('l, F j, Y') }} </p>
             </div>
         </div>
