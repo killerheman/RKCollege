@@ -1,4 +1,4 @@
-@extends('home.includes.layout', ['title' => 'B.Ed Gallery'])
+@extends('home.includes.layout', ['title' => 'Gallery'])
 
 @section('content')
     <div class="page-wrapper">
@@ -8,7 +8,7 @@
 
 <div class="gallery">
   @foreach($imageFileNames as $fileName)
-  <a href="{{asset('uploads/uploads/photo-gallery/bed_gallery/' . $fileName)  }}"><img src="{{ asset('uploads/uploads/photo-gallery/bed_gallery/' . $fileName) }}" alt="{{ $fileName }}"></a>
+  <a href="{{asset('frontend/assets/images/gallery/' . $fileName)  }}"><img src="{{ asset('frontend/assets/images/gallery/' . $fileName) }}" alt="{{ $fileName }}"></a>
   @endforeach
   </div>
             </div>

@@ -314,6 +314,12 @@ class HomeController extends Controller
         $imageFileNames = array_map('basename', $imageFiles);
         return view('home.bed.gallery', compact('imageFileNames'));
     }
+    public function allGallery(){
+        $imageFolder = public_path('frontend/assets/images/gallery/');
+        $imageFiles = glob($imageFolder . '/*.{jpg,png,jpeg}', GLOB_BRACE);
+        $imageFileNames = array_map('basename', $imageFiles);
+        return view('home.gallery.all_gallery', compact('imageFileNames'));  
+    }
     public function infrastructure(){
         return view('home.bed.infrastructure');
     }
@@ -729,14 +735,6 @@ class HomeController extends Controller
     {
         return view('home.courses.bba_bca_courses');
     }
-
-
-
-
-
-
-
-
 
     //Old Websites
 

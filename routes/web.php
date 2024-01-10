@@ -258,6 +258,9 @@ Route::get('/bba-bca-courses', [HomeController::class, 'bbaBcaCourses'])->name('
 // pdf view
 Route::get('/pdf/{path}/{pdfName}', [HomeController::class,'showPdf'])->name('show-pdf');
 
+//all gallery
+Route::get('all-gallery',[HomeController::class,'allGallery'])->name('all-gallery');
+
 
 
 
