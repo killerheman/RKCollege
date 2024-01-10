@@ -7,6 +7,9 @@
             <div class="row page-row">
                 <iframe src="{{ asset('uploads/uploads/2023/07/BEST-PRATICE-2020-21.pdf') }}" width="100%" height="600px"></iframe>
                 <iframe src="{{ asset('/uploads/uploads/2023/07/Institutional-two-best-Pratices-2016-17-1.pdf') }}" width="100%" height="600px"></iframe>
+                <iframe src="{{ asset('/uploads/uploads/2023/07/BEST PRATICE 2020-21.pdf') }}" width="100%" height="600px"></iframe>
+                <iframe src="{{ asset('/uploads/uploads/2023/07/Best Pratice 2022-23.pdf') }}" width="100%" height="600px"></iframe>
+                <iframe src="{{ asset('/uploads/uploads/2023/07/Best Pratices 2021-22.pdf') }}" width="100%" height="600px"></iframe>
 
             </div>
         </div>
