@@ -8,7 +8,7 @@
             <span style="font-size: 1.6rem;font-weight: bold;">Notice - </span>
         </div>
         <div class="col-sm-11" style="background-color: #f5f5f5;color:black;">
-            <marquee style="font-size: 12pt">
+            <marquee style="font-size: 12pt" onmouseover="this.stop();" onmouseout="this.start();">
                 @if ($topnotices)
                     @foreach ($topnotices as $notice)
                         @if ($notice->type == 'link')
@@ -52,7 +52,7 @@
                     <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Admission</a></li>
                 </ul>
                 <!-- Tab panes -->
-                <div class="tab-content tabs">
+                <!-- <div class="tab-content tabs">
                     <div role="tabpanel" class="tab-pane fade in active" id="Section1">
                         @if ($notices)
                         @foreach ($notices as $notice)
@@ -71,18 +71,83 @@
                                         id="ctl00_ContentPlaceHolder1_RptrAnnouncement_ctl00_imgBadge" />
                                 </p>
                             @endif
-                        @endforeach
+                       
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                      
+                            @if ($notice->category=='exam')
+                                <p>{{ $notice->title }}</p>
+                            @endif
+                        
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                        @if ($notice->category=='admission')
+                        <p>{{ $notice->title }}</p>
+                    @endif
+                    </div>
+                    @endforeach
                     @else
                         <p>No notice uploaded</p>
                     @endif
+                </div> -->
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                        @if ($notices)
+                            @foreach ($notices as $notice)
+                            @if ($notice->type == 'link')
+                            <p style="color: black;">
+                                <a href='{{ $notice->filename }}'><i class="fa fa-hand-o-right"
+                                        aria-hidden="true"></i>{{ $notice->title }}</a>
+                                <img src="{{ asset('frontend/assets/images/misc/new_red.gif') }}"
+                                    id="ctl00_ContentPlaceHolder1_RptrAnnouncement_ctl00_imgBadge" />
+                            </p>
+                        @elseif($notice->type == 'file')
+                            <p style="color: black;">
+                                <a href='{{ asset($notice->filename) }}'><i class="fa fa-hand-o-right"
+                                        aria-hidden="true"></i> {{ $notice->title }}</a>
+                                <img src="{{ asset('frontend/assets/images/misc/new_red.gif') }}"
+                                    id="ctl00_ContentPlaceHolder1_RptrAnnouncement_ctl00_imgBadge" />
+                            </p>
+                        @endif
+                            @endforeach
+                        @else
+                            <p>No notice uploaded</p>
+                        @endif
                     </div>
+                
                     <div role="tabpanel" class="tab-pane fade" id="Section2">
-                        <h3>Exam</h3>
+                        @if ($notices)
+                            @foreach ($notices as $notice)                      
+                                @if ($notice->category == 'examination')
+                                   @if ($notice->type == 'file')
+                                  <p style="color: black;"><li> <a href="{{$notice->filename }}" class="button" download><i class="fa fa-download"></i>{{ $notice->title }}</a></li></p><br>
+                                   @elseif ($notice->type == 'link')
+                                <p><li><a href="{{ $notice->filename }}" style="color: maroon;">{{ $notice->title }}</a></li></p>
+                                   @endif
+                                @endif
+                            @endforeach
+                        @else
+                            <p>No notice uploaded</p>
+                        @endif
                     </div>
+                
                     <div role="tabpanel" class="tab-pane fade" id="Section3">
-                        <p>Admissions</p>
+                        @if ($notices)
+                            @foreach ($notices as $notice)
+                                @if ($notice->category == 'admission')
+                                @if ($notice->type == 'file')
+                                <p><li> <a href="{{$notice->filename }}" class="button" download><i class="fa fa-download"></i>{{ $notice->title }}</a></li></p><br>
+                                 @elseif ($notice->type == 'link')
+                              <p><li><a href="{{ $notice->filename }}" style="color: maroon;">{{ $notice->title }}</a></li></p>
+                                 @endif
+                                @endif
+                            @endforeach
+                        @else
+                            <p>No notice uploaded</p>
+                        @endif
                     </div>
                 </div>
+                
             </div>
         </div>
         <div class="col-md-4">
