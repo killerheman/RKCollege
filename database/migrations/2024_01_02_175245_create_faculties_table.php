@@ -22,6 +22,7 @@ return new class extends Migration
             $table->bigInteger('phone')->nullable();
             $table->string('status')->nullable();
             $table->string('image')->nullable();
+            $table->string('resume')->nullable();
             $table->string('designation')->nullable();
             $table->softDeletes();
             $table->timestamps();

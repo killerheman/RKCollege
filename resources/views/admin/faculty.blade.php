@@ -52,11 +52,15 @@
                                 <input type="text" id="designation" class="form-control" value="{{ isset($edit)?$edit->designation:'' }}" name="designation" placeholder=" Designation">
                               </div>
                               <div class="col-6 mt-2">
-                                <label for="image">Department Image</label>
+                                <label for="image">Profile Image</label>
                                 <input type="file" id="image" class="form-control" name="image">
                                 @if(isset($edit))
                                     <img src="{{isset($edit)? asset($edit->image):'' }}" alt="image" height="100" width="150">
                                 @endif
+                              </div>
+                              <div class="col-6 mt-2">
+                                <label for="pdfFile">Upload Resume</label>
+                                <input type="file" id="pdfFile" value="{{ isset($edit)?$edit->resume:'' }}" class="form-control" name="resume" accept=".pdf">    
                               </div>
                               <div class="col-12 mt-4">
                                 <button type="submit" class="btn btn-success ">{{ isset($edit)?'Update':'Submit' }}</button>   
@@ -88,8 +92,8 @@
                                 <th scope="col">Phone</th>
                                 <th scope="col">Designation</th>
                                 <th scope="col">Status</th>
+                                <th scope="col">Resume</th>
                                 <th scope="col">Image</th>
-                                <th scope="col">Created at</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -98,14 +102,16 @@
                                 <tr>
                                     <th>{{ $loop->index + 1 }}</th>
                                     <td style="word-wrap: break-word;">{{ $faculty->department->department_name??'' }}</td>
-                                    <td style="word-wrap: break-word;">{{ $faculty->subject->subject_name }}</td>
-                                    <td>{{ $faculty->name }}</td>
-                                    <td>{{ $faculty->email }}</td>
-                                    <td>{{ $faculty->phone }}</td>
-                                    <td>{{ $faculty->designation }}</td>
-                                    <td>{{ $faculty->status }}</td>
-                                    <td><img src="{{ isset($faculty)?asset($faculty->image):''}}" alt="image" height="100" width="200"/></td>
-                                    <td>{{ $faculty->created_at??'' }}</td>
+                                    <td style="word-wrap: break-word;">{{ $faculty->subject->subject_name??'' }}</td>
+                                    <td>{{ $faculty->name??'' }}</td>
+                                    <td>{{ $faculty->email??'' }}</td>
+                                    <td>{{ $faculty->phone??'' }}</td>
+                                    <td>{{ $faculty->designation??'' }}</td>
+                                    <td>{{ $faculty->status??'' }}</td>
+                                    {{-- <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-modal-id="facultyModal" title="click to open">View</button></td> --}}
+                                    {{-- <td><a href="{{ route('admin.faculty.show',$faculty->id) }}" data-target="#facultyModal{{ $faculty->id }}" title="click to open">view</a></td>    --}}
+                                   <td><a href="{{ asset($faculty->resume??'') }}" class="button" title="click to download" download></i>Download</a></td> 
+                                     <td><img src="{{ isset($faculty)?asset($faculty->image):''}}" alt="image" height="100" width="200"/></td>
                                     <td>
                                         <div class="d-flex">
                                             <a href="{{route('admin.faculty.edit',$faculty->id) }}" class="btn btn-primary me-3">edit</a>
@@ -130,12 +136,38 @@
             </div>
         </div>
     </div>
-    
+    {{-- <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#pdfModal" title="click to open">View</button> --}}
+    <div class="modal fade modal-dialog modal-lg" id="facultyModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                @foreach ($faculties as $faculty)
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">{{ $faculty->name??'' }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    {{-- <embed src="{{ isset($faculty)?asset($faculty->resume):'Resume Not Upload'  }}" type="application/pdf" width="100%" height="600px" /> --}}
+                    <object data="{{ isset($faculty)?asset($faculty->resume):'Resume Not Upload'  }}" type="application/pdf" width="100%" height="600px" ></object>
+                        
+                    </div>
+                    @endforeach
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  
-    <!-- Grids in modals -->
 
 @section('script-area')
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
 {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
 <script>
     $(document).ready(function () {
@@ -152,6 +184,32 @@
        });
     });
 </script>
+<script>
+    function validateFile() {
+        var fileInput = document.getElementById('pdfFile');
+        var filePath = fileInput.value;
+        var allowedExtensions = /(\.pdf)$/i;
+
+        if (!allowedExtensions.exec(filePath)) {
+            alert('Please select a PDF file.');
+            fileInput.value = '';
+            return false;
+        }
+    }
+</script>
+
+<script>
+    $(document).ready(function() {
+        // Click event for the button
+        $('button[data-modal-id]').on('click', function() {
+            // Get the modal ID from the data attribute
+            var modalId = $(this).data('modal-id');
+    
+            // Open the modal with the specified ID
+            $('#' + modalId).modal('show');
+        });
+    });
+    </script>
 @endsection
 
 @endsection

@@ -54,6 +54,12 @@ class FacultyController extends Controller
             $request->image->move(public_path('uploads/uploads/faculty/'), $dept_img);
             $pic_name = 'uploads/uploads/faculty/' . $dept_img;
         }
+        $dept_resume = '';
+        if ($request->hasFile('resume')) {
+            $dept_resume = 'resume-' . time() . '-' . rand(0, 99) . '.' . $request->resume->extension();
+            $request->resume->move(public_path('uploads/uploads/faculty/'), $dept_resume);
+            $dept_resume = 'uploads/uploads/faculty/' . $dept_resume;
+        }
         $faculty = Faculty::create([
             'department_id'=>$request->department_id,
             'subject_id'=>$request->subject_id,
@@ -62,7 +68,8 @@ class FacultyController extends Controller
             'phone'=>$request->phone,
             'status'=>$request->status,
             'designation'=>$request->designation,
-            'image'=>$pic_name
+            'image'=>$pic_name,
+            'resume'=>$dept_resume
         ]);
         if ($faculty) 
             {
@@ -81,7 +88,11 @@ class FacultyController extends Controller
      */
     public function show($id)
     {
-        //
+        // $resume = Faculty::find($id); 
+        // $faculties = Faculty::paginate(10);
+        // $department = Department::all();
+        // $subdepartment = SubDepartment::all();
+        // return view('admin.faculty',compact('resume','faculties','department','subdepartment'));
     }
 
     /**
@@ -93,10 +104,10 @@ class FacultyController extends Controller
     public function edit($id)
     {
         $edit = Faculty::find($id);
-        $faculty = Faculty::paginate(10);
+        $faculties = Faculty::paginate(10);
         $department = Department::all();
         $subdepartment = SubDepartment::all();
-        return view('admin.faculty',compact('edit','faculty','department','subdepartment'));
+        return view('admin.faculty',compact('edit','faculties','department','subdepartment'));
     }
 
     /**
@@ -113,14 +124,24 @@ class FacultyController extends Controller
         $exists_image = $data->image;
          
          if ($request->hasFile('image')) {
-            $dept_img = 'subdept-' . time() . '-' . rand(0, 99) . '.' . $request->image->extension();
-            $request->image->move(public_path('uploads/uploads/subject-dept/'), $dept_img);
-            $pic_name = 'uploads/uploads/subject-dept/' . $dept_img;
+            $dept_img = 'subdept-'.time().'-'.rand(0, 99).'.'.$request->image->extension();
+            $request->image->move(public_path('uploads/uploads/subject-dept/'),$dept_img);
+            $pic_name = 'uploads/uploads/subject-dept/'.$dept_img;
              if ($exists_image) {
                  File::delete(public_path($exists_image));
              }
          }
-         $data = SubDepartment::find($id);
+         $dept_resume = '';
+        $exists_resume = $data->resume;
+        if ($request->hasFile('resume')) {
+            $resume = 'resume-'.time().'-'.rand(0, 99).'.'.$request->resume->extension();
+            $request->resume->move(public_path('uploads/uploads/faculty/'),$resume);
+            $dept_resume = 'uploads/uploads/faculty/'.$resume;
+            if ($exists_resume) {
+                File::delete(public_path($exists_resume));
+            }
+        }
+         $data = Faculty::find($id);
          $faculty = $data->update([
             'department_id'=>$request->department_id,
             'subject_id'=>$request->subject_id,
@@ -130,6 +151,7 @@ class FacultyController extends Controller
             'email'=>$request->email,
             'designation'=>$request->designation,
             'status'=>$request->status,
+            'resume'=>$dept_resume,
          ]);
          if ($faculty) 
              {
