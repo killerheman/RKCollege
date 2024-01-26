@@ -47,6 +47,7 @@ class FacultyController extends Controller
             'subject_id'=>'required',
             'name'=>'required',
             'designation'=>'required',
+            'resume'=>'nullable|mimes:pdf'
         ]);
         $pic_name = '';
         if ($request->hasFile('image')) {
@@ -88,11 +89,8 @@ class FacultyController extends Controller
      */
     public function show($id)
     {
-        // $resume = Faculty::find($id); 
-        // $faculties = Faculty::paginate(10);
-        // $department = Department::all();
-        // $subdepartment = SubDepartment::all();
-        // return view('admin.faculty',compact('resume','faculties','department','subdepartment'));
+            // $faculties = Faculty::findOrFail($id);
+            // return view('admin.faculty',compact('faculties'));
     }
 
     /**
@@ -119,6 +117,10 @@ class FacultyController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $validate = $request->validate([
+            'image'=>'required',
+            'resume'=>'nullable|mimes:pdf'
+        ]);
         $pic_name = '';
         $data = Faculty::find($id);
         $exists_image = $data->image;

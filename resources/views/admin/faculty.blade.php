@@ -60,8 +60,11 @@
                               </div>
                               <div class="col-6 mt-2">
                                 <label for="pdfFile">Upload Resume</label>
-                                <input type="file" id="pdfFile" value="{{ isset($edit)?$edit->resume:'' }}" class="form-control" name="resume" accept=".pdf">    
-                              </div>
+                                <input type="file" id="pdfFile" value="{{ isset($edit)?$edit->resume:'' }}" class="form-control  @error('resume') is-invalid @enderror" name="resume" accept=".pdf">    
+                                @error('resume')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                            </div>
                               <div class="col-12 mt-4">
                                 <button type="submit" class="btn btn-success ">{{ isset($edit)?'Update':'Submit' }}</button>   
                               </div>
@@ -108,10 +111,8 @@
                                     <td>{{ $faculty->phone??'' }}</td>
                                     <td>{{ $faculty->designation??'' }}</td>
                                     <td>{{ $faculty->status??'' }}</td>
-                                    {{-- <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-modal-id="facultyModal" title="click to open">View</button></td> --}}
-                                    {{-- <td><a href="{{ route('admin.faculty.show',$faculty->id) }}" data-target="#facultyModal{{ $faculty->id }}" title="click to open">view</a></td>    --}}
-                                   <td><a href="{{ asset($faculty->resume??'') }}" class="button" title="click to download" download></i>Download</a></td> 
-                                     <td><img src="{{ isset($faculty)?asset($faculty->image):''}}" alt="image" height="100" width="200"/></td>
+                                   <td><a class="btn btn-link p-0 faculty_resume " style="display:inline" data-url=" {{ isset($faculty->resume)?asset($faculty->resume):'#'  }}"><button type="button" class="btn btn-sm btn-primary">View</button></a></td>
+                                   <td><img src="{{ isset($faculty)?asset($faculty->image):''}}" alt="image" height="100" width="200"/></td>
                                     <td>
                                         <div class="d-flex">
                                             <a href="{{route('admin.faculty.edit',$faculty->id) }}" class="btn btn-primary me-3">edit</a>
@@ -136,29 +137,21 @@
             </div>
         </div>
     </div>
-    {{-- <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#pdfModal" title="click to open">View</button> --}}
-    <div class="modal fade modal-dialog modal-lg" id="facultyModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+    <div class="modal fade" id="facultyModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" >
             <div class="modal-content">
-                @foreach ($faculties as $faculty)
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">{{ $faculty->name??'' }}</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    {{-- <embed src="{{ isset($faculty)?asset($faculty->resume):'Resume Not Upload'  }}" type="application/pdf" width="100%" height="600px" /> --}}
-                    <object data="{{ isset($faculty)?asset($faculty->resume):'Resume Not Upload'  }}" type="application/pdf" width="100%" height="600px" ></object>
-                        
-                    </div>
-                    @endforeach
+                <div class="modal-body">                  
+                    <object id="resume_modal_object" type="application/pdf" width="100%" height="600px" ></object>
+               </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn-secondry" data-bs-dismiss="modal" aria-label="Close">Close</button>
                 </div>
             </div>
         </div>
-    </div>
+    </div>     
 
 
 @section('script-area')
@@ -184,32 +177,22 @@
        });
     });
 </script>
-<script>
-    function validateFile() {
-        var fileInput = document.getElementById('pdfFile');
-        var filePath = fileInput.value;
-        var allowedExtensions = /(\.pdf)$/i;
-
-        if (!allowedExtensions.exec(filePath)) {
-            alert('Please select a PDF file.');
-            fileInput.value = '';
-            return false;
-        }
-    }
-</script>
 
 <script>
-    $(document).ready(function() {
-        // Click event for the button
-        $('button[data-modal-id]').on('click', function() {
-            // Get the modal ID from the data attribute
-            var modalId = $(this).data('modal-id');
-    
-            // Open the modal with the specified ID
-            $('#' + modalId).modal('show');
-        });
+	$(document).ready(function() {
+		$(document).on('click', '.faculty_resume', function() {
+        
+			var resume_url = $(this).data('url');
+            // alert(resume_url);
+            $('#resume_modal_object').attr('data',resume_url);
+            $('#facultyModal').modal('show');
+		});
+        $('#facultyModal').on('hidden.bs.modal', function() {
+        location.reload(true); // true for hard reload
+      
     });
-    </script>
+	});
+</script>
 @endsection
 
 @endsection
